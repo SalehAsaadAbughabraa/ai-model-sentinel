@@ -4,6 +4,9 @@ import { Command } from 'commander';
 import { startCommand } from '../commands/start';
 import { configCommand } from '../commands/config';
 import { versionCommand } from '../commands/version';
+import { statusCommand } from '../commands/status';
+import { alertsCommand } from '../commands/alerts';
+import { modelsCommand } from '../commands/models';
 import { logger } from '@ai-model-sentinel/core';
 
 const program = new Command();
@@ -17,6 +20,9 @@ program
 program.addCommand(startCommand);
 program.addCommand(configCommand);
 program.addCommand(versionCommand);
+program.addCommand(statusCommand);
+program.addCommand(alertsCommand);
+program.addCommand(modelsCommand);
 
 // Global error handling
 program.configureOutput({
