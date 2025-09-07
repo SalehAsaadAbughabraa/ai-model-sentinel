@@ -1,0 +1,36 @@
+{
+  "name": "@ai-model-sentinel/monorepo",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "Enterprise AI Model Monitoring Platform - Monorepo",
+  "keywords": [
+    "ai-monitoring",
+    "mlops",
+    "enterprise",
+    "monorepo"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "dev": "npm run dev --workspace=packages/cli",
+    "start": "npm run start --workspace=packages/cli",
+    "docker:build": "docker build -t ai-model-sentinel .",
+    "docker:push": "docker push registry/ai-model-sentinel:latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "lerna": "^8.2.3",
+    "nx": "^17.2.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.6.7"
+  },
+  "packageManager": "npm@9.6.7",
+  "dependencies": {}
+}
