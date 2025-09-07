@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { logger } from '../utils/logger';
+import * as fs from 'fs';
 
 // Configuration schema validation
 const ConfigSchema = z.object({
@@ -73,5 +74,17 @@ export class ConfigManager {
     };
 
     return ConfigSchema.parse(envConfig);
+  }
+
+  static loadFromFile(filePath: string): AppConfig {
+    try {
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      const configData = JSON.parse(fileContent);
+      const configManager = new ConfigManager(configData);
+      return configManager.getConfig();
+    } catch (error) {
+      logger.error(`Failed to load config from file ${filePath}:`, error);
+      throw new Error(`Configuration file error: ${(error as Error).message}`);
+    }
   }
 }
