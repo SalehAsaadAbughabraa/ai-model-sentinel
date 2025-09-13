@@ -1,91 +1,26 @@
-import React from 'react';
-import { useDashboard } from '../hooks/useDashboard';
-import { MetricsCard } from './MetricsCard';
-import { 
-  Brain, 
-  Activity, 
-  AlertTriangle, 
-  TrendingUp,
-  BarChart3 
-} from 'lucide-react';
-
-export const Dashboard: React.FC = () => {
-  const { metrics, alerts, models, loading } = useDashboard();
-
-  if (loading) {
-    return <div className="loading">Loading dashboard...</div>;
+{
+  "name": "web-dashboard",
+  "version": "0.1.0",
+  "description": "React-based dashboard for AI Model Sentinel",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "chart.js": "^4.2.0",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.0",
+    "ts-loader": "^9.4.0",
+    "typescript": "^4.9.0"
   }
-
-  return (
-    <div className="dashboard">
-      <header className="dashboard-header">
-        <h1>AI Model Sentinel Dashboard</h1>
-        <p>Real-time monitoring and governance</p>
-      </header>
-
-      <div className="metrics-grid">
-        <MetricsCard
-          title="Total Models"
-          value={metrics.totalModels}
-          icon={Brain}
-          trend={{ value: 2, isPositive: true }}
-        />
-        <MetricsCard
-          title="Active Monitoring"
-          value={metrics.activeMonitoring}
-          icon={Activity}
-        />
-        <MetricsCard
-          title="Total Alerts"
-          value={metrics.totalAlerts}
-          icon={AlertTriangle}
-          trend={{ value: 5, isPositive: false }}
-        />
-        <MetricsCard
-          title="Performance Score"
-          value={`${(metrics.performance * 100).toFixed(1)}%`}
-          icon={TrendingUp}
-        />
-      </div>
-
-      <div className="dashboard-content">
-        <div className="alerts-section">
-          <h2>Recent Alerts</h2>
-          <div className="alerts-list">
-            {alerts.map(alert => (
-              <div key={alert.id} className={`alert-item ${alert.severity}`}>
-                <span className="alert-type">{alert.type}</span>
-                <span className="alert-message">{alert.message}</span>
-                <span className="alert-time">
-                  {new Date(alert.timestamp).toLocaleString()}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="models-section">
-          <h2>Registered Models</h2>
-          <div className="models-list">
-            {models.map(model => (
-              <div key={model.id} className="model-item">
-                <div className="model-info">
-                  <h4>{model.name}</h4>
-                  <span>v{model.version}</span>
-                </div>
-                <div className="model-stats">
-                  <span className={`status ${model.status}`}>
-                    {model.status}
-                  </span>
-                  <span className="accuracy">
-                    {(model.accuracy * 100).toFixed(1)}% accuracy
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+}

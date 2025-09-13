@@ -1,49 +1,26 @@
 {
-  "name": "@ai-model-sentinel/monorepo",
+  "name": "ai-model-sentinel",
   "version": "0.1.0-alpha.0",
-  "private": true,
-  "description": "Enterprise AI Model Monitoring Platform - Monorepo",
-  "keywords": [
-    "ai-monitoring",
-    "mlops",
-    "enterprise",
-    "monorepo"
-  ],
-  "workspaces": [
-    "packages/*"
-  ],
+  "description": "Lightweight open-source toolkit for monitoring AI models in production",
+  "main": "index.js",
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
-    "lint": "lerna run lint",
-    "dev": "lerna run dev --parallel",
-    "start": "npm run start --workspace=packages/cli",
-    "clean": "lerna run clean",
-    "bootstrap": "lerna bootstrap",
-    "docker:build": "docker build -t ai-model-sentinel .",
-    "docker:push": "docker push registry/ai-model-sentinel:latest",
-    "docker:start": "docker-compose up -d"
+    "dev": "lerna run dev --parallel"
   },
+  "keywords": [
+    "ai",
+    "ml",
+    "monitoring",
+    "machine-learning",
+    "model-monitoring"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "@types/node": "^20.9.0",
-    "jest": "^29.7.0",
-    "lerna": "^8.2.3",
-    "nx": "^17.2.0",
-    "typescript": "^5.2.2"
+    "lerna": "^6.0.0"
   },
   "dependencies": {
-    "lucide-react": "^0.542.0"
-  },
-  "engines": {
-    "node": ">=18.17.0",
-    "npm": ">=9.6.7"
-  },
-  "packageManager": "npm@9.6.7",
-  "license": "Apache-2.0",
-  "author": "Saleh Asaad Abughabraa",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel.git"
+    "aws-sdk": "^2.1692.0"
   }
 }

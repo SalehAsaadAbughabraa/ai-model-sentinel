@@ -124,3 +124,9 @@ out
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+# Ignore nested node_modules and package-lock in packages
+packages/*/package-lock.json
+packages/*/node_modules/
+
+# Ignore any duplicate or temporary folders
+ai-model-sentinel/
