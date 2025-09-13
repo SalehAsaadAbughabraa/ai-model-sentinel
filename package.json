@@ -36,13 +36,11 @@
   "packageManager": "npm@9.6.7",
   "dependencies": {
     "lucide-react": "^0.542.0"
-  }
-{
+  },
   "license": "Apache-2.0",
   "author": "Saleh Asaad Abughabraa",
   "repository": {
     "type": "git",
     "url": "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel.git"
   }
-}
 }
