@@ -2,10 +2,22 @@
 
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import { scanProject } from '../src/services/scanner';
-import { startMonitoring } from '../src/services/monitor';
-import { generateReport } from '../src/utils/reporter';
 import { AWSCommands } from '../commands/cloud/aws-commands';
+
+// استيرادات مؤقتة - سننشئ هذه الملفات لاحقاً
+const scanProject = async (path: string, options?: any) => {
+  console.log('📊 Scan functionality coming soon...');
+  return { models: [], stats: { directoriesScanned: 0, scanDuration: 0 } };
+};
+
+const startMonitoring = async (config: any) => {
+  console.log('🛡️ Monitoring functionality coming soon...');
+};
+
+const generateReport = async (options: any) => {
+  console.log('📄 Report functionality coming soon...');
+  return { filePath: '/tmp/report.json' };
+};
 
 yargs(hideBin(process.argv))
   .scriptName('ai-sentinel')
@@ -155,7 +167,7 @@ yargs(hideBin(process.argv))
         
         if (results.models.length > 0) {
           console.log('\n🔍 Models found:');
-          results.models.forEach((model, index) => {
+          results.models.forEach((model: any, index: number) => {
             console.log(`${index + 1}. ${model.filePath} (${model.format})`);
           });
         }
@@ -186,9 +198,9 @@ yargs(hideBin(process.argv))
           const awsCommands = new AWSCommands({
             provider: 'aws',
             credentials: {
-              accessKeyId: process.env.AWS_ACCESS_KEY_ID || argv.accessKeyId,
-              secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || argv.secretAccessKey,
-              region: process.env.AWS_REGION || argv.region || 'us-east-1'
+              accessKeyId: process.env.AWS_ACCESS_KEY_ID || argv.accessKeyId as string,
+              secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || argv.secretAccessKey as string,
+              region: process.env.AWS_REGION || argv.region as string || 'us-east-1'
             }
           });
 
@@ -224,12 +236,12 @@ yargs(hideBin(process.argv))
       else if (argv._.includes('version')) {
         console.log('AI Model Sentinel v0.1.0-alpha.0');
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('❌ Error:', error.message);
       process.exit(1);
     }
   })
-  .catch((error) => {
+  .catch((error: any) => {
     console.error('❌ Fatal error:', error.message);
     process.exit(1);
   });

@@ -5,22 +5,31 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna run build",
+    "dev": "lerna run dev --parallel",
     "test": "lerna run test",
-    "dev": "lerna run dev --parallel"
+    "clean": "rm -rf node_modules packages/*/node_modules packages/*/dist",
+    "clean:install": "npm run clean && npm install",
+    "lint": "lerna run lint",
+    "start": "lerna run start --parallel"
   },
   "keywords": [
     "ai",
     "ml",
     "monitoring",
     "machine-learning",
-    "model-monitoring"
+    "model-monitoring",
+    "cloud",
+    "aws",
+    "azure",
+    "gcp"
   ],
-  "author": "Your Name",
+  "author": "Saleh Asaad Abughabraa",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^6.0.0"
+    "lerna": "^6.6.2"
   },
-  "dependencies": {
-    "aws-sdk": "^2.1692.0"
-  }
+  "dependencies": {},
+  "workspaces": [
+    "packages/*"
+  ]
 }
