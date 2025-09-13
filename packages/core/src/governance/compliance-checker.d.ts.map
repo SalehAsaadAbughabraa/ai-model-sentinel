@@ -1,0 +1,1 @@
+{"version":3,"file":"compliance-checker.d.ts","sourceRoot":"","sources":["compliance-checker.ts"],"names":[],"mappings":"AAEA,qBAAa,iBAAiB;IAC5B,MAAM,CAAC,mBAAmB,CAAC,IAAI,EAAE,GAAG,GAAG,OAAO;IAM9C,MAAM,CAAC,oBAAoB,CAAC,IAAI,EAAE,GAAG,GAAG,OAAO;IAM/C,MAAM,CAAC,mBAAmB,IAAI,GAAG;CAOlC"}
