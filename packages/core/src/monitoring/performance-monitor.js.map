@@ -1,0 +1,1 @@
+{"version":3,"file":"performance-monitor.js","sourceRoot":"","sources":["performance-monitor.ts"],"names":[],"mappings":";;;AAEA,MAAa,kBAAkB;IAC7B,MAAM,CAAC,YAAY;QACjB,8CAA8C;QAC9C,OAAO;YACL,QAAQ,EAAE,IAAI;YACd,SAAS,EAAE,IAAI;YACf,MAAM,EAAE,IAAI;YACZ,OAAO,EAAE,KAAK;YACd,aAAa,EAAE,EAAE;YACjB,SAAS,EAAE,IAAI,IAAI,EAAE;SACtB,CAAC;IACJ,CAAC;CACF;AAZD,gDAYC"}

@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  cli:
+    build: 
+      context: .
+      dockerfile: Dockerfile.cli
+    volumes:
+      - ./config:/app/config
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
+  monitoring:
+    build:
+      context: .
+      dockerfile: Dockerfile.core
+    environment:
+      - REDIS_URL=redis://redis:6379
+
+  redis:
+    image: redis:alpine
