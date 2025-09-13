@@ -1,12 +1,17 @@
-// Main exports for the core package
-export * from './monitoring';
-export * from './governance';
-export * from './types';
-export * from './utils/logger';
-export * from './config';
-export * from './alerts';
 
-// Export the advanced monitoring service as default
-export { AdvancedMonitoringService as MonitoringService } from './monitoring/monitoring-service';
-export { ConfigManager } from './config';
-export { AlertManager } from './alerts';
+export { scanProject } from './services/scanner';
+export { startMonitoring } from './services/monitor';
+export { generateReport } from './utils/reporter';
+
+
+export { AWSProvider } from './cloud/providers/aws/aws-provider';
+export { CloudProviderFactory } from './cloud';
+
+
+export type { 
+  CloudProviderConfig, 
+  DeploymentConfig, 
+  MonitoringConfig, 
+  CloudStorageConfig, 
+  TrainingJobConfig 
+} from './cloud/types';

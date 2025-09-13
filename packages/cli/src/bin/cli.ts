@@ -3,21 +3,11 @@
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import { AWSCommands } from '../commands/cloud/aws-commands';
-
-// استيرادات مؤقتة - سننشئ هذه الملفات لاحقاً
-const scanProject = async (path: string, options?: any) => {
-  console.log('📊 Scan functionality coming soon...');
-  return { models: [], stats: { directoriesScanned: 0, scanDuration: 0 } };
-};
-
-const startMonitoring = async (config: any) => {
-  console.log('🛡️ Monitoring functionality coming soon...');
-};
-
-const generateReport = async (options: any) => {
-  console.log('📄 Report functionality coming soon...');
-  return { filePath: '/tmp/report.json' };
-};
+import { 
+  scanProject, 
+  startMonitoring, 
+  generateReport 
+} from '@ai-model-sentinel/core';
 
 yargs(hideBin(process.argv))
   .scriptName('ai-sentinel')
@@ -160,20 +150,20 @@ yargs(hideBin(process.argv))
           deepScan: argv.deep as boolean
         });
         
-        console.log('📊 Scan Results:');
-        console.log(`✅ Found ${results.models.length} AI models`);
-        console.log(`📁 Scanned ${results.stats.directoriesScanned} directories`);
-        console.log(`⚡ Duration: ${results.stats.scanDuration}ms`);
+        console.log('Scan Results:');
+        console.log(`Found ${results.models.length} AI models`);
+        console.log(`Scanned ${results.stats.directoriesScanned} directories`);
+        console.log(`Duration: ${results.stats.scanDuration}ms`);
         
         if (results.models.length > 0) {
-          console.log('\n🔍 Models found:');
+          console.log('\nModels found:');
           results.models.forEach((model: any, index: number) => {
             console.log(`${index + 1}. ${model.filePath} (${model.format})`);
           });
         }
       }
       else if (argv._.includes('monitor')) {
-        console.log('🛡️ Starting monitoring service...');
+        console.log('Starting monitoring service...');
         await startMonitoring({
           modelPath: argv.path as string,
           checkInterval: argv.interval as number,
@@ -181,18 +171,16 @@ yargs(hideBin(process.argv))
         });
       }
       else if (argv._.includes('dashboard')) {
-        console.log('🌐 Starting web dashboard...');
-        console.log(`🚀 Dashboard will be available at http://${argv.host}:${argv.port}`);
-        // TODO: Implement dashboard startup
+        console.log('Starting web dashboard...');
+        console.log(`Dashboard will be available at http://${argv.host}:${argv.port}`);
       }
       else if (argv._.includes('report')) {
         const report = await generateReport({
           format: argv.format as 'json' | 'html' | 'csv',
           outputPath: argv.output as string
         });
-        console.log(`📄 Report generated: ${report.filePath}`);
+        console.log(`Report generated: ${report.filePath}`);
       }
-      // الأوامر السحابية الجديدة
       else if (argv._.includes('cloud')) {
         if (argv._.includes('aws')) {
           const awsCommands = new AWSCommands({
@@ -227,21 +215,21 @@ yargs(hideBin(process.argv))
           }
         }
         else if (argv._.includes('azure')) {
-          console.log('⚠️ Azure integration coming soon!');
+          console.log('Azure integration coming soon!');
         }
         else if (argv._.includes('gcp')) {
-          console.log('⚠️ GCP integration coming soon!');
+          console.log('GCP integration coming soon!');
         }
       }
       else if (argv._.includes('version')) {
         console.log('AI Model Sentinel v0.1.0-alpha.0');
       }
     } catch (error: any) {
-      console.error('❌ Error:', error.message);
+      console.error('Error:', error.message);
       process.exit(1);
     }
   })
   .catch((error: any) => {
-    console.error('❌ Fatal error:', error.message);
+    console.error('Fatal error:', error.message);
     process.exit(1);
   });
