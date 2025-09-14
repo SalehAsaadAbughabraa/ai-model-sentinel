@@ -27,3 +27,9 @@ export const LICENSE = 'MIT';
 export const AUTHOR = 'AI Model Sentinel Team';
 // ==================== AI SERVICE ====================
 export { AIService, aiService } from './services/ai-service';
+// ==================== REAL-TIME WEBSOCKET ====================
+export { 
+  WebSocketService, 
+  webSocketService, 
+  type RealTimeData 
+} from './services/websocket/websocket-service';

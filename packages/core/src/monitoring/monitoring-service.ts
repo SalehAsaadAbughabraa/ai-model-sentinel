@@ -39,7 +39,7 @@ export class AdvancedMonitoringService extends BaseService {
   private scheduleMonitoring(): void {
     this.intervalId = setInterval(() => {
       this.runMonitoringCycle().catch(error => {
-        logger.error('Monitoring cycle failed:', error);
+      logger.error('Monitoring cycle failed: ' + (error as Error).message);
       });
     }, this.config.monitoring.interval);
   }
