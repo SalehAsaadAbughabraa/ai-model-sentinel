@@ -1,6 +1,15 @@
-import { BaseCloudProvider } from './base-provider';
-import { CloudProviderConfig } from './types';
 import { AWSProvider } from './providers/aws/aws-provider';
+import { AzureProvider } from './providers/azure/azure-provider';
+import { GCPProvider } from './providers/gcp/gcp-provider';
+import { BaseCloudProvider } from './base-provider';
+import { 
+  CloudProviderConfig, 
+  DeploymentConfig, 
+  MonitoringConfig, 
+  CloudStorageConfig, 
+  TrainingJobConfig,
+  CloudProvider 
+} from './types';
 
 export class CloudProviderFactory {
   static createProvider(config: CloudProviderConfig): BaseCloudProvider {
@@ -8,18 +17,22 @@ export class CloudProviderFactory {
       case 'aws':
         return new AWSProvider(config);
       case 'azure':
-        throw new Error('Azure provider not yet implemented');
+        return new AzureProvider(config);
       case 'gcp':
-        throw new Error('GCP provider not yet implemented');
+        return new GCPProvider(config);
+      case 'ibm':
+        throw new Error('IBM provider coming soon');
+      case 'oracle':
+        throw new Error('Oracle provider coming soon');
       case 'huggingface':
-        throw new Error('Hugging Face provider not yet implemented');
+        throw new Error('Hugging Face provider coming soon');
       default:
         throw new Error(`Unsupported cloud provider: ${config.provider}`);
     }
   }
 
-  static getAvailableProviders(): string[] {
-    return ['aws', 'azure', 'gcp', 'huggingface'];
+  static getAvailableProviders(): CloudProvider[] {
+    return ['aws', 'azure', 'gcp', 'ibm', 'oracle', 'huggingface'];
   }
 
   static validateConfig(config: CloudProviderConfig): string[] {
@@ -38,7 +51,7 @@ export class CloudProviderFactory {
           if (!config.credentials.secretAccessKey) errors.push('AWS secretAccessKey is required');
           break;
         case 'azure':
-          if (!config.credentials.subscriptionId) errors.push('Azure subscriptionId is required');
+          if (!config.credentials.connectionString) errors.push('Azure connectionString is required');
           break;
         case 'gcp':
           if (!config.credentials.projectId) errors.push('GCP projectId is required');
@@ -50,9 +63,15 @@ export class CloudProviderFactory {
   }
 }
 
-// Export individual providers for direct usage
 export { AWSProvider } from './providers/aws/aws-provider';
-export type { CloudProviderConfig } from './types';
+export { AzureProvider } from './providers/azure/azure-provider';
+export { GCPProvider } from './providers/gcp/gcp-provider';
 
-// Re-export types for convenience
-export type { DeploymentConfig, MonitoringConfig, CloudStorageConfig, TrainingJobConfig } from './types';
+export type { 
+  CloudProviderConfig, 
+  DeploymentConfig, 
+  MonitoringConfig, 
+  CloudStorageConfig, 
+  TrainingJobConfig,
+  CloudProvider 
+} from './types';

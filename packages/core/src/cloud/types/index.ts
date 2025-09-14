@@ -1,11 +1,14 @@
+export type CloudProvider = 'aws' | 'azure' | 'gcp' | 'ibm' | 'oracle' | 'huggingface';
+
 export interface CloudProviderConfig {
-  provider: 'aws' | 'azure' | 'gcp' | 'huggingface';
+  provider: CloudProvider;
   credentials: {
     accessKeyId?: string;
     secretAccessKey?: string;
     region?: string;
     projectId?: string;
     subscriptionId?: string;
+    connectionString?: string;
   };
 }
 
@@ -36,45 +39,4 @@ export interface TrainingJobConfig {
   modelType: string;
   hyperparameters: { [key: string]: any };
   instanceType: string;
-}
-
-export interface AppConfig {
-  modelPath: string;
-  checkInterval: number;
-  apiKey?: string;
-  alerts?: {
-    email?: string;
-    slackWebhook?: string;
-  };
-}
-
-export interface ScanResult {
-  models: Array<{
-    filePath: string;
-    format: string;
-    size: number;
-    detectedAt: Date;
-  }>;
-  stats: {
-    directoriesScanned: number;
-    filesScanned: number;
-    scanDuration: number;
-  };
-}
-
-export interface MonitorConfig {
-  modelPath: string;
-  checkInterval: number;
-  apiKey?: string;
-}
-
-export interface ReportOptions {
-  format: 'json' | 'html' | 'csv';
-  outputPath?: string;
-}
-
-export interface ReportResult {
-  filePath: string;
-  format: string;
-  generatedAt: Date;
 }
