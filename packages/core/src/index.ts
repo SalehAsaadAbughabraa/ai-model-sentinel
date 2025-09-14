@@ -1,25 +1,29 @@
-// Export core services
+// ==================== CORE EXPORTS ====================
 export { scanProject } from './services/scanner';
 export { startMonitoring } from './services/monitor';
 export { generateReport } from './utils/reporter';
 
-// Export utilities
+// ==================== UTILITIES ====================
 export { logger } from './utils/logger';
 export { ConfigManager } from './services/config-manager';
-export { MonitoringService } from './services/monitoring-service';
 
-// Export cloud providers
-export { AWSProvider } from './cloud/providers/aws/aws-provider';
-export { AzureProvider } from './cloud/providers/azure/azure-provider';
-export { GCPProvider } from './cloud/providers/gcp/gcp-provider';
+// ==================== CLOUD CORE ====================
 export { CloudProviderFactory } from './cloud';
-
-// Export types
 export type { 
   CloudProviderConfig, 
   DeploymentConfig, 
   MonitoringConfig, 
   CloudStorageConfig, 
   TrainingJobConfig,
-  CloudProvider
+  CloudProvider 
 } from './cloud/types';
+
+// ==================== API ====================
+export { DashboardAPI } from './services/api/dashboardAPI';
+
+// ==================== VERSION INFO ====================
+export const VERSION = '0.1.0-alpha.0';
+export const LICENSE = 'MIT';
+export const AUTHOR = 'AI Model Sentinel Team';
+// ==================== AI SERVICE ====================
+export { AIService, aiService } from './services/ai-service';

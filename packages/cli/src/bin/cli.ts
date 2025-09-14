@@ -132,6 +132,14 @@ yargs(hideBin(process.argv))
       .command('gcp', 'GCP cloud operations (coming soon)', {})
       .demandCommand(1, 'Please specify a cloud command');
   })
+  .command('api', 'Start dashboard API server', (yargs) => {
+    return yargs
+      .option('port', {
+        type: 'number',
+        default: 3001,
+        describe: 'Port to run API server on'
+      });
+  })
   .command('version', 'Show version information', () => {}, (argv) => {
     console.log('AI Model Sentinel v0.1.0-alpha.0');
   })
@@ -220,6 +228,11 @@ yargs(hideBin(process.argv))
         else if (argv._.includes('gcp')) {
           console.log('GCP integration coming soon!');
         }
+      }
+      else if (argv._.includes('api')) {
+        const { DashboardAPI } = require('@ai-model-sentinel/core');
+        const api = new DashboardAPI(argv.port as number);
+        api.start();
       }
       else if (argv._.includes('version')) {
         console.log('AI Model Sentinel v0.1.0-alpha.0');

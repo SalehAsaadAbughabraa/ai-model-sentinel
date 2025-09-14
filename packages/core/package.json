@@ -1,7 +1,7 @@
 {
   "name": "@ai-model-sentinel/core",
-  "version": "0.1.0-alpha.0",
-  "description": "Core functionality for AI Model Sentinel",
+  "version": "1.0.0-enterprise",
+  "description": "Enterprise-grade AI model monitoring and management platform"
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
