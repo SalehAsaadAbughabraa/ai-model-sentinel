@@ -1,7 +1,7 @@
 {
   "name": "@ai-model-sentinel/core",
-  "version": "1.0.0-enterprise",
-  "description": "Enterprise-grade AI model monitoring and management platform"
+"version": "0.1.0-alpha.0",
+  "description": "Enterprise-grade AI model monitoring and management platform",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -10,27 +10,22 @@
     "test": "jest"
   },
   "dependencies": {
-    "@azure/storage-blob": "^12.28.0",
-    "@google-cloud/functions": "^4.2.0",
-    "@google-cloud/storage": "^7.17.1",
-    "aws-sdk": "^2.1595.0",
-    "pino": "^8.19.0",
-    "yargs": "^17.7.2",
-    "zod": "^3.22.0"
+    "express": "^4.18.2",
+    "aws-sdk": "^2.1595.0"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.8",
     "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
     "jest": "^29.7.0",
-    "typescript": "^5.3.0"
+    "@types/jest": "^29.5.8"
   },
   "keywords": [
     "ai",
     "ml",
     "monitoring",
-    "machine-learning",
+    "enterprise",
     "cloud"
   ],
-  "author": "Your Name",
+  "author": "AI Model Sentinel Team",
   "license": "MIT"
 }
