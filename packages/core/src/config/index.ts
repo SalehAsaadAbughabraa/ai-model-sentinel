@@ -37,7 +37,7 @@ export class ConfigManager {
     try {
       return ConfigSchema.parse(config);
     } catch (error) {
-      logger.error('Invalid configuration:', error);
+    logger.error('Invalid configuration: ' + (error as Error).message);
       throw new Error('Configuration validation failed');
     }
   }
@@ -83,7 +83,7 @@ export class ConfigManager {
       const configManager = new ConfigManager(configData);
       return configManager.getConfig();
     } catch (error) {
-      logger.error(`Failed to load config from file ${filePath}:`, error);
+logger.error(`Failed to load config from file ${filePath}: ` + (error as Error).message);
       throw new Error(`Configuration file error: ${(error as Error).message}`);
     }
   }

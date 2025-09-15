@@ -1,0 +1,14 @@
+{
+  "name": "aws-examples",
+  "version": "1.0.0",
+  "description": "AWS Cloud Provider usage examples",
+  "scripts": {
+    "basic": "ts-node aws/basic-usage.ts",
+    "advanced": "ts-node aws/advanced-usage.ts",
+    "all": "npm run basic && npm run advanced"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.0",
+    "typescript": "^4.9.0"
+  }
+}

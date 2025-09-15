@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { PerformanceChart } from './PerformanceChart';
-import { RefreshIndicator } from './RefreshIndicator';
-import { useLiveData } from '../hooks/useLiveData';
-
+import dayjs from 'dayjs';
 export const Dashboard: React.FC = () => {
   const [isManualRefresh, setIsManualRefresh] = useState(false);
   const liveMetrics = useLiveData(5000); // تحديث كل 5 ثواني

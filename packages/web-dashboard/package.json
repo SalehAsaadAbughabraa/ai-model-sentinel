@@ -1,91 +1,57 @@
-import React from 'react';
-import { useDashboard } from '../hooks/useDashboard';
-import { MetricsCard } from './MetricsCard';
-import { 
-  Brain, 
-  Activity, 
-  AlertTriangle, 
-  TrendingUp,
-  BarChart3 
-} from 'lucide-react';
-
-export const Dashboard: React.FC = () => {
-  const { metrics, alerts, models, loading } = useDashboard();
-
-  if (loading) {
-    return <div className="loading">Loading dashboard...</div>;
+{
+  "name": "web-dashboard",
+  "version": "0.1.0",
+  "description": "Advanced React Dashboard for AI Model Sentinel",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "react-scripts start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^5.2.2",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
+    "@mui/x-charts": "^6.0.0",
+    "@reduxjs/toolkit": "^2.9.0",
+    "@tanstack/react-query": "^5.87.4",
+    "@tanstack/react-table": "^8.21.3",
+    "axios": "^1.5.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.0",
+    "framer-motion": "^12.23.12",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.62.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-redux": "^9.2.0",
+    "react-scripts": "5.0.1",
+    "react-spring": "^10.0.1",
+    "recharts": "^2.15.4",
+    "socket.io-client": "^4.8.1",
+    "victory": "^37.3.6",
+    "yup": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^4.9.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
-
-  return (
-    <div className="dashboard">
-      <header className="dashboard-header">
-        <h1>AI Model Sentinel Dashboard</h1>
-        <p>Real-time monitoring and governance</p>
-      </header>
-
-      <div className="metrics-grid">
-        <MetricsCard
-          title="Total Models"
-          value={metrics.totalModels}
-          icon={Brain}
-          trend={{ value: 2, isPositive: true }}
-        />
-        <MetricsCard
-          title="Active Monitoring"
-          value={metrics.activeMonitoring}
-          icon={Activity}
-        />
-        <MetricsCard
-          title="Total Alerts"
-          value={metrics.totalAlerts}
-          icon={AlertTriangle}
-          trend={{ value: 5, isPositive: false }}
-        />
-        <MetricsCard
-          title="Performance Score"
-          value={`${(metrics.performance * 100).toFixed(1)}%`}
-          icon={TrendingUp}
-        />
-      </div>
-
-      <div className="dashboard-content">
-        <div className="alerts-section">
-          <h2>Recent Alerts</h2>
-          <div className="alerts-list">
-            {alerts.map(alert => (
-              <div key={alert.id} className={`alert-item ${alert.severity}`}>
-                <span className="alert-type">{alert.type}</span>
-                <span className="alert-message">{alert.message}</span>
-                <span className="alert-time">
-                  {new Date(alert.timestamp).toLocaleString()}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="models-section">
-          <h2>Registered Models</h2>
-          <div className="models-list">
-            {models.map(model => (
-              <div key={model.id} className="model-item">
-                <div className="model-info">
-                  <h4>{model.name}</h4>
-                  <span>v{model.version}</span>
-                </div>
-                <div className="model-stats">
-                  <span className={`status ${model.status}`}>
-                    {model.status}
-                  </span>
-                  <span className="accuracy">
-                    {(model.accuracy * 100).toFixed(1)}% accuracy
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+}

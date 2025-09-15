@@ -1,12 +1,35 @@
-// Main exports for the core package
-export * from './monitoring';
-export * from './governance';
-export * from './types';
-export * from './utils/logger';
-export * from './config';
-export * from './alerts';
+// ==================== CORE EXPORTS ====================
+export { scanProject } from './services/scanner';
+export { startMonitoring } from './services/monitor';
+export { generateReport } from './utils/reporter';
 
-// Export the advanced monitoring service as default
-export { AdvancedMonitoringService as MonitoringService } from './monitoring/monitoring-service';
-export { ConfigManager } from './config';
-export { AlertManager } from './alerts';
+// ==================== UTILITIES ====================
+export { logger } from './utils/logger';
+export { ConfigManager } from './services/config-manager';
+
+// ==================== CLOUD CORE ====================
+export { CloudProviderFactory } from './cloud';
+export type { 
+  CloudProviderConfig, 
+  DeploymentConfig, 
+  MonitoringConfig, 
+  CloudStorageConfig, 
+  TrainingJobConfig,
+  CloudProvider 
+} from './cloud/types';
+
+// ==================== API ====================
+export { DashboardAPI } from './services/api/dashboardAPI';
+
+// ==================== VERSION INFO ====================
+export const VERSION = '0.1.0-alpha.0';
+export const LICENSE = 'MIT';
+export const AUTHOR = 'AI Model Sentinel Team';
+// ==================== AI SERVICE ====================
+export { AIService, aiService } from './services/ai-service';
+// ==================== REAL-TIME WEBSOCKET ====================
+export { 
+  WebSocketService, 
+  webSocketService, 
+  type RealTimeData 
+} from './services/websocket/websocket-service';

@@ -1,5 +1,8 @@
 import { Command } from 'commander';
-import { logger } from '@ai-model-sentinel/core';
+const logger = {
+  info: (message: string) => console.log(`ℹ️ ${message}`),
+  error: (message: string) => console.error(`❌ ${message}`)
+};
 
 export const alertsCommand = new Command()
   .name('alerts')
@@ -28,7 +31,7 @@ export const alertsCommand = new Command()
       }
 
     } catch (error) {
-      logger.error('Alerts command failed:', error);
+      logger.error('Alerts command failed: ' + error);
       process.exit(1);
     }
   });

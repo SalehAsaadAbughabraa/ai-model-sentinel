@@ -140,6 +140,38 @@ yargs(hideBin(process.argv))
         describe: 'Port to run API server on'
       });
   })
+  .command('websocket', 'Start WebSocket server', (yargs) => {
+    return yargs
+      .option('port', {
+        type: 'number',
+        default: 3002,
+        describe: 'Port to run WebSocket server on'
+      });
+  })
+  .command('ai', 'AI-powered commands', (yargs) => {
+    return yargs
+      .command('predict', 'Make AI prediction', {
+        input: {
+          type: 'string',
+          demandOption: true,
+          describe: 'Input data for prediction'
+        }
+      })
+      .command('analyze', 'Analyze model performance', {
+        modelId: {
+          type: 'string',
+          demandOption: true,
+          describe: 'Model ID to analyze'
+        }
+      })
+      .command('detect-anomalies', 'Detect anomalies in data', {
+        data: {
+          type: 'string',
+          demandOption: true,
+          describe: 'Data to analyze for anomalies'
+        }
+      });
+  })
   .command('version', 'Show version information', () => {}, (argv) => {
     console.log('AI Model Sentinel v0.1.0-alpha.0');
   })
@@ -234,15 +266,35 @@ yargs(hideBin(process.argv))
         const api = new DashboardAPI(argv.port as number);
         api.start();
       }
+      else if (argv._.includes('websocket')) {
+        const { webSocketService } = require('@ai-model-sentinel/core');
+        webSocketService.initialize(argv.port as number);
+      }
+      else if (argv._.includes('ai')) {
+        const { aiService } = require('@ai-model-sentinel/core');
+        
+        if (argv._.includes('predict')) {
+          const result = await aiService.predict(JSON.parse(argv.input as string));
+          console.log('🤖 AI Prediction Result:', result);
+        }
+        else if (argv._.includes('analyze')) {
+          const result = await aiService.analyze(argv.modelId as string);
+          console.log('📊 AI Analysis Result:', result);
+        }
+        else if (argv._.includes('detect-anomalies')) {
+          const result = await aiService.detectAnomalies(JSON.parse(argv.data as string));
+          console.log('⚠️ Anomaly Detection Result:', result);
+        }
+      }
       else if (argv._.includes('version')) {
         console.log('AI Model Sentinel v0.1.0-alpha.0');
       }
     } catch (error: any) {
-      console.error('Error:', error.message);
+      console.error('❌ Error:', error.message);
       process.exit(1);
     }
   })
   .catch((error: any) => {
-    console.error('Fatal error:', error.message);
+    console.error('❌ Fatal error:', error.message);
     process.exit(1);
   });
