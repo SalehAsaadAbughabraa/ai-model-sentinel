@@ -1,16 +1,1 @@
-{ 
-  "name": "ai-model-sentinel", 
-  "version": "0.1.0", 
-  "description": "Enterprise-grade security system for protecting AI models", 
-  "main": "index.js", 
-  "scripts": { 
-    "test": "echo \"Error: no test specified\" && exit 1" 
-  }, 
-  "keywords": ["ai-security", "model-protection", "honeytoken"], 
-  "author": "Saleh Asaad Abughabraa", 
-  "license": "MIT", 
-  "repository": { 
-    "type": "git", 
-    "url": "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel.git" 
-  } 
-} 
+{"name":"ai-model-sentinel","version":"0.1.1","description":"Enterprise-grade security system for protecting AI models","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["ai-security","model-protection","honeytoken"],"author":"Saleh Asaad Abughabraa","license":"MIT","repository":{"type":"git","url":"https://github.com/SalehAsaadAbughabraa/ai-model-sentinel.git"}}
