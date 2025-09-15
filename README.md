@@ -71,3 +71,16 @@ We welcome contributions! Please read our contribution guidelines.
 ## ?? License 
  
 MIT License - see LICENSE file for details. 
+"Download direct: https://github.com/SalehAsaadAbughabraa/ai-model-sentinel/archive/refs/heads/main.zip" 
+ 
+"## ?? Alternative Installation Methods" 
+ 
+"### Direct Download" 
+"Download the latest version: [ai-model-sentinel-v1.0.0.zip](https://github.com/SalehAsaadAbughabraa/ai-model-sentinel/archive/refs/heads/main.zip)" 
+ 
+"### Manual Installation" 
+\`\`\`bash 
+git clone https://github.com/SalehAsaadAbughabraa/ai-model-sentinel.git 
+cd ai-model-sentinel 
+pip install -r requirements.txt 
+\`\`\` 
