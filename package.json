@@ -1,6 +1,6 @@
 {
   "name": "ai-model-sentinel",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "Lightweight open-source toolkit for monitoring AI models in production",
   "main": "index.js",
   "scripts": {
