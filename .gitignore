@@ -1,3 +1,53 @@
+<<<<<<< HEAD
+# Python 
+__pycache__/ 
+*.py[cod] 
+*$py.class 
+*.so 
+.Python 
+build/ 
+develop-eggs/ 
+dist/ 
+downloads/ 
+eggs/ 
+.eggs/ 
+lib/ 
+lib64/ 
+parts/ 
+sdist/ 
+var/ 
+wheels/ 
+*.egg-info/ 
+.installed.cfg 
+*.egg 
+ 
+# Virtual environment 
+sentinel-env/ 
+venv/ 
+env/ 
+.venv/ 
+ 
+# Logs 
+*.log 
+logs/ 
+ 
+# IDE 
+.vscode/ 
+.idea/ 
+*.swp 
+*.swo 
+ 
+# OS 
+.DS_Store 
+Thumbs.db 
+ 
+# Test files 
+test_*.py 
+ 
+# Environment variables 
+.env 
+.env.local 
+=======
 node_modules/
 dist/
 build/
@@ -130,3 +180,4 @@ packages/*/node_modules/
 
 # Ignore any duplicate or temporary folders
 ai-model-sentinel/
+>>>>>>> cdfb15effb5e71918f5847d2b130c46ebe77bc9c
