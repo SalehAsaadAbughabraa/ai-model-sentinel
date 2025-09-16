@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="ai-model-sentinel",
-    version="0.1.1",
+    version="0.1.2",
     author="Saleh Asaad Abughabraa",
     author_email="saleh.abughabraa@example.com",
     description="Comprehensive AI Model Monitoring and Drift Detection Toolkit",
