@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  ai-sentinel:
+    build: .
+    ports:
+      - "3000:3000"
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+      - API_KEY=${API_KEY}
+    volumes:
+      - ./ai-models:/app/ai-models
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  # Optional: Add Redis for caching
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  # Optional: Add monitoring dashboard
+  dashboard:
+    build: .
+    command: npm run start:dashboard
+    ports:
+      - "3001:3001"
+    depends_on:
+      - ai-sentinel
