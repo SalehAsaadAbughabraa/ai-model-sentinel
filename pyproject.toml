@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-model-sentinel"
+version = "1.0.0"
+description = "Military Grade Security Scanner for AI Models and Python Files"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Saleh Asaad Abughabraa", email = "saleh87alally@gmail.com"},
+]
+keywords = ["security", "ai", "ml", "scanner", "cybersecurity"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = [
+    "numpy>=2.3.0",
+    "psutil>=7.0.0",
+]
+
+[project.scripts]
+ai-sentinel = "military_scanner:main"
+
+[project.urls]
+Homepage = "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel"
+"Bug Tracker" = "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel/issues"
