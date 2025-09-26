@@ -1,11 +1,21 @@
-# Python 
-__pycache__/ 
-*.pyc 
-*.pyo 
-*.pyd 
-.Python 
-build/ 
-develop-eggs/ 
-dist/ 
-*.egg-info/ 
-.eggs/ 
+"# Python" 
+"__pycache__/" 
+"*.py[cod]" 
+"*$py.class" 
+"" 
+"# Distribution / packaging" 
+"dist/" 
+"build/" 
+"*.egg-info/" 
+"" 
+"# Scan reports" 
+"advanced_scan_report_*.json" 
+"secure_scan_report_*.json" 
+"military_scan_report_*.json" 
+"*.log" 
+"" 
+"# IDE" 
+".vscode/" 
+".idea/" 
+"*.swp" 
+"*.swo" 

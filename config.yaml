@@ -1,0 +1,25 @@
+scanner:
+  version: "1.0.0"
+  max_file_size: 100MB
+  max_threads: 8
+  
+detection:
+  signature_engines:
+    - yara_rules
+    - custom_patterns
+    - threat_intelligence_feeds
+  
+  heuristic_engines:
+    - entropy_analysis
+    - behavioral_patterns
+    - anomaly_detection
+  
+  ml_models:
+    - isolation_forest
+    - neural_network
+    - ensemble_learning
+
+reporting:
+  formats: [json, html, pdf]
+  detail_level: comprehensive
+  auto_upload: false
