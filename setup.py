@@ -8,7 +8,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="ai-model-sentinel",
-    version="1.0.0",
+    version="1.0.1",
     author="Saleh Asaad Abughabraa",
     author_email="saleh87alally@gmail.com",
     description="Military Grade Security Scanner for AI Models and Python Files",
@@ -39,5 +39,5 @@ setup(
         "Bug Reports": "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel/issues",
         "Source": "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel",
     },
-    license="MIT",
+    license="MIT", 
 )
