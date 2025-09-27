@@ -39,5 +39,5 @@ setup(
         "Bug Reports": "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel/issues",
         "Source": "https://github.com/SalehAsaadAbughabraa/ai-model-sentinel",
     },
-    license="MIT",
+    license="MIT", 
 )
