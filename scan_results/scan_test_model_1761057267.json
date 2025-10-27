@@ -1,0 +1,6 @@
+{
+  "error": "'EnterpriseAIScanner' object has no attribute 'comprehensive_scan'",
+  "model_path": "test_model.pt",
+  "timestamp": "2025-10-21T17:34:27.328392",
+  "scan_duration": 0.0015277862548828125
+}

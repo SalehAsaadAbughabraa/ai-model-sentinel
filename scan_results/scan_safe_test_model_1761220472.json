@@ -1,0 +1,45 @@
+{
+  "file_statistics": {
+    "size_bytes": 540,
+    "size_mb": 0.000514984130859375,
+    "hash_sha256": "45f3df08833962da468888643bd22aad8f9d423b4d561381fb6c9e5467737f8f",
+    "format": ".pt",
+    "format_supported": true,
+    "last_modified": "2025-10-21T17:33:54.802150",
+    "permissions": "666"
+  },
+  "entropy_analysis": {
+    "entropy": 0.6060022964066626,
+    "assessment": "MEDIUM",
+    "data_analyzed_bytes": 540
+  },
+  "structural_analysis": {
+    "file_size_reasonable": true,
+    "format_consistent": true,
+    "magic_bytes_valid": true,
+    "compression_detected": false,
+    "integrity_score": 0.75,
+    "assessment": "GOOD"
+  },
+  "threat_score": 0.15,
+  "threat_level": "SAFE",
+  "recommendations": [
+    "Always verify model sources before use",
+    "Use digital signatures for model authentication",
+    "Implement regular security scanning"
+  ],
+  "scan_id": "scan_1761220472_2680887371213349658",
+  "scan_duration": 0.19896697998046875,
+  "timestamp": "2025-10-23T14:54:32.226621",
+  "version": "2.0.0",
+  "system_info": {
+    "version": "2.0.0",
+    "scanner_type": "basic",
+    "gpu_accelerated": true,
+    "components_loaded": {
+      "advanced_scanner": false,
+      "gpu_accelerator": true,
+      "monitoring": false
+    }
+  }
+}

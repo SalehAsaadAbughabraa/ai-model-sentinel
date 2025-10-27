@@ -1,0 +1,116 @@
+{
+  "analysis_date": "2025-10-28T02:27:50.666469",
+  "engines_analyzed": 10,
+  "complexity_distribution": {
+    "HIGH": 0,
+    "MEDIUM": 1,
+    "LOW": 9
+  },
+  "engines": [
+    {
+      "name": "anomaly_engine",
+      "file": "anomaly_engine.py",
+      "complexity": {
+        "total_lines": 1,
+        "code_lines": 1,
+        "comment_lines": 0,
+        "complexity": "LOW"
+      }
+    },
+    {
+      "name": "dynamic_engine_fixed",
+      "file": "dynamic_engine_fixed.py",
+      "complexity": {
+        "total_lines": 13,
+        "code_lines": 12,
+        "comment_lines": 0,
+        "complexity": "LOW"
+      }
+    },
+    {
+      "name": "engine_stubs",
+      "file": "engine_stubs.py",
+      "complexity": {
+        "total_lines": 1,
+        "code_lines": 1,
+        "comment_lines": 0,
+        "complexity": "LOW"
+      }
+    },
+    {
+      "name": "enterprise_security",
+      "file": "enterprise_security.py",
+      "complexity": {
+        "total_lines": 56,
+        "code_lines": 45,
+        "comment_lines": 0,
+        "complexity": "LOW"
+      }
+    },
+    {
+      "name": "quantum_engines_fixed",
+      "file": "quantum_engines_fixed.py",
+      "complexity": {
+        "total_lines": 17,
+        "code_lines": 16,
+        "comment_lines": 0,
+        "complexity": "LOW"
+      }
+    },
+    {
+      "name": "quantum_fix",
+      "file": "quantum_fix.py",
+      "complexity": {
+        "total_lines": 28,
+        "code_lines": 20,
+        "comment_lines": 6,
+        "complexity": "LOW"
+      }
+    },
+    {
+      "name": "quantum_pbkdf2_final",
+      "file": "quantum_pbkdf2_final.py",
+      "complexity": {
+        "total_lines": 1,
+        "code_lines": 0,
+        "comment_lines": 1,
+        "complexity": "LOW"
+      }
+    },
+    {
+      "name": "quantum_stubs",
+      "file": "quantum_stubs.py",
+      "complexity": {
+        "total_lines": 17,
+        "code_lines": 17,
+        "comment_lines": 0,
+        "complexity": "LOW"
+      }
+    },
+    {
+      "name": "test_all_engines",
+      "file": "test_all_engines.py",
+      "complexity": {
+        "total_lines": 612,
+        "code_lines": 469,
+        "comment_lines": 45,
+        "complexity": "MEDIUM"
+      }
+    },
+    {
+      "name": "drift_detector",
+      "file": "analytics\\drift_detector.py",
+      "complexity": {
+        "total_lines": 85,
+        "code_lines": 65,
+        "comment_lines": 6,
+        "complexity": "LOW"
+      }
+    }
+  ],
+  "recommendations": [
+    "Monitor high-complexity engines for performance",
+    "Consider refactoring engines with 500+ code lines",
+    "Add caching for frequently used engines"
+  ]
+}

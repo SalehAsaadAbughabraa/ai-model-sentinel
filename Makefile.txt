@@ -1,0 +1,30 @@
+.PHONY: deploy deploy-full deploy-dev setup test clean
+
+# Full production deployment
+deploy: 
+	python deploy.py --full --with-monitoring
+
+# Development deployment
+deploy-dev:
+	python deploy.py --full --with-dev-tools --skip-env-check
+
+# Environment setup only
+setup:
+	python deploy.py --setup-env-only
+
+# Database setup only
+setup-db:
+	python deploy.py --setup-db-only
+
+# Install dependencies only
+deps:
+	python deploy.py --install-deps-only --with-dev-tools
+
+# Run tests and security scans
+test:
+	python deploy.py --skip-database --skip-env-check
+
+# Clean deployment artifacts
+clean:
+	rm -rf __pycache__ logs/deployment.log .pytest_cache
+	find . -name "*.pyc" -delete

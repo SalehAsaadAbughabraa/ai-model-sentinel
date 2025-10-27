@@ -1,0 +1,19 @@
+{
+  "documentation_generated": "2025-10-28 02:08:43",
+  "total_python_files": 5760,
+  "engines_documented": 10,
+  "categories_found": [
+    "Quantum",
+    "Security",
+    "AI/ML",
+    "Data",
+    "Fusion/Monitoring"
+  ],
+  "documentation_size_mb": 0.01,
+  "next_steps": [
+    "Add API documentation",
+    "Create deployment guides",
+    "Add troubleshooting examples",
+    "Generate architecture diagrams"
+  ]
+}

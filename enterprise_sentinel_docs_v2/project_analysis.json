@@ -1,0 +1,41 @@
+{
+  "total_python_files": 5760,
+  "engine_files_count": 3432,
+  "config_files_count": 14,
+  "database_files_count": 4,
+  "sample_python_files": [
+    "advanced_database.py",
+    "advanced_database_fixed.py",
+    "anomaly_engine.py",
+    "backblaze_fix.py",
+    "check_files.py",
+    "comprehensive_test.py",
+    "correct_test.py",
+    "create_compatibility_test.py",
+    "create_compatibility_test_simple.py",
+    "crypto_compat.py",
+    "crypto_fix.py",
+    "dashboard_compatibility.py",
+    "database_config.py",
+    "database_connector_fixed.py",
+    "diagnostic_numpy_fixes.py"
+  ],
+  "sample_engine_files": [
+    "anomaly_engine.py",
+    "dynamic_engine_fixed.py",
+    "engine_stubs.py",
+    "enterprise_security.py",
+    "quantum_engines_fixed.py",
+    "quantum_fix.py",
+    "quantum_pbkdf2_final.py",
+    "quantum_stubs.py",
+    "test_all_engines.py",
+    "analytics\\drift_detector.py"
+  ],
+  "database_files": [
+    "ai_security_scans.db",
+    "enterprise_sentinel_2025.db",
+    "threat_signatures.db",
+    "web_interface\\enterprise_sentinel_2025.db"
+  ]
+}

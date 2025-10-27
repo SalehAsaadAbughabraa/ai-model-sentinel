@@ -1,0 +1,1 @@
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC\nPBKDF2 = PBKDF2HMAC  # Alias for compatibility\n

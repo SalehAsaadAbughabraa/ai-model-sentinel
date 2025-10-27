@@ -1,0 +1,20 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Enterprise AI Sentinel API",
+    "version": "2.0.0",
+    "description": "API endpoints will be automatically detected"
+  },
+  "paths": {
+    "/api/engines": {
+      "get": {
+        "summary": "List all engines",
+        "responses": {
+          "200": {
+            "description": "List of engines"
+          }
+        }
+      }
+    }
+  }
+}

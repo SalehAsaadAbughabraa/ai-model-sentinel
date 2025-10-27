@@ -1,0 +1,238 @@
+ENTERPRISE AI SENTINEL - DIAGNOSTIC REPORT
+======================================================================
+Generated: 2025-10-26T00:52:08.036604
+
+🧠 ENGINE CLASSES DETECTED:
+--------------------------------------------------
+DataQualityEngine         | Source: enterprise_system_v2.py
+UltimateCryptographicEngine | Source: ultimate_system.py
+AXEngine                  | Source: ai_sentinel_env\Lib\site-packages\win32comext\axscript\server\axsite.py
+DatabaseEngine            | Source: analytics\bigdata\bigquery_engine.py
+LocalAnalyticsEngine      | Source: analytics\bigdata\bigquery_engine.py
+LocalAnalyticalEngine     | Source: analytics\bigdata\data_pipeline.py
+SnowflakeAnalyticsEngine  | Source: analytics\bigdata\snowflake_engine.py
+FusionEngine              | Source: app\engines\fusion_engine.py
+MLEngine                  | Source: app\engines\ml_engine.py
+QuantumEngine             | Source: app\engines\quantum_engine.py
+DetectionEngine           | Source: app\engines\__init__.py
+ProductionQuantumSecurityEngine | Source: core\quantum_engine.py
+SecurityAnalyticsEngine   | Source: core\models\audit_models.py
+ThreatAnalyticsEngine     | Source: core\models\threat_models.py
+DynamicRuleEngine         | Source: core\security\compliance.py
+DataQualityEngine         | Source: engines\data_quality_engine.py
+ExplainabilityEngine      | Source: engines\explainability_engine.py
+EnhancedFusionIntelligenceEngine | Source: engines\fusion_engine.py
+ModelMonitoringEngine     | Source: engines\model_monitoring_engine.py
+SecurityEngine            | Source: engines\security_engine.py
+QuantumFingerprintEngine  | Source: fusion_engine\model_fingerprinting\fingerprint_generator.py
+QuantumNeuralFingerprintEngine | Source: fusion_engine\neural_signatures\neural_fingerprint.py
+QuantumCryptographicEngine | Source: mathematical_engine\cryptographic_engine\prime_crypto.py
+QuantumCryptographicEngine | Source: mathematical_engine\cryptographic_engine\__init__.py
+QuantumInformationEngine  | Source: mathematical_engine\information_theory\information_engine.py
+QuantumInformationEngine  | Source: mathematical_engine\information_theory\__init__.py
+PrimeNeuralEngine         | Source: mathematical_engine\prime_analysis\prime_neural_engine.py
+QuantumMathematicalEngine | Source: quantum_enhanced\quantum_math\quantum_calculator.py
+VCPythonEngine            | Source: quantum_env\Lib\site-packages\cffi\vengine_cpy.py
+VGenericEngine            | Source: quantum_env\Lib\site-packages\cffi\vengine_gen.py
+AbstractEngine            | Source: quantum_env\Lib\site-packages\pandas\core\computation\engines.py
+NumExprEngine             | Source: quantum_env\Lib\site-packages\pandas\core\computation\engines.py
+PythonEngine              | Source: quantum_env\Lib\site-packages\pandas\core\computation\engines.py
+MultiIndexUIntEngine      | Source: quantum_env\Lib\site-packages\pandas\core\indexes\multi.py
+MultiIndexPyIntEngine     | Source: quantum_env\Lib\site-packages\pandas\core\indexes\multi.py
+BaseEngine                | Source: quantum_env\Lib\site-packages\pandas\io\sql.py
+SQLAlchemyEngine          | Source: quantum_env\Lib\site-packages\pandas\io\sql.py
+TestEngine                | Source: quantum_env\Lib\site-packages\pandas\tests\groupby\test_numba.py
+TestDatetimeEngine        | Source: quantum_env\Lib\site-packages\pandas\tests\indexes\test_engines.py
+TestTimedeltaEngine       | Source: quantum_env\Lib\site-packages\pandas\tests\indexes\test_engines.py
+TestNumericEngine         | Source: quantum_env\Lib\site-packages\pandas\tests\indexes\test_engines.py
+TestObjectEngine          | Source: quantum_env\Lib\site-packages\pandas\tests\indexes\test_engines.py
+TestEngine                | Source: quantum_env\Lib\site-packages\pandas\tests\window\test_numba.py
+
+📦 MATH / AI LIBRARIES USED IN CODE:
+--------------------------------------------------
+.lib.scimath              | Version: Not installed
+ArrowStringArrayNumpySemantics | Version: Not installed
+DockerClient              | Version: Not installed
+DockerException           | Version: Not installed
+MatplotlibColor           | Version: Not installed
+NUMPY_FLOAT_TO_DTYPE      | Version: Not installed
+NUMPY_INT_TO_DTYPE        | Version: Not installed
+NumPyStabilityFixer       | Version: Not installed
+NumpyBlock                | Version: Not installed
+NumpyEADtype              | Version: Not installed
+NumpyExtensionArray       | Version: Not installed
+NumpyIndexT               | Version: Not installed
+NumpyVersion              | Version: Not installed
+PandasColumn              | Version: Not installed
+PandasDataFrameXchg       | Version: Not installed
+PandasDelegate            | Version: Not installed
+PandasObject              | Version: Not installed
+SciPy                     | Version: 1.16.2
+StringArrayNumpySemantics | Version: Not installed
+_multiarray_umath         | Version: Not installed
+_pocketfft_umath          | Version: Not installed
+_umath_linalg             | Version: Not installed
+_umath_tests              | Version: Not installed
+arrow_table_to_pandas     | Version: Not installed
+cmath                     | Version: Not installed
+docker                    | Version: 7.1.0
+get_overridable_numpy_array_functions | Version: Not installed
+hash_pandas_object        | Version: Not installed
+hypothesis.extra.numpy    | Version: Not installed
+is_numpy                  | Version: Not installed
+is_numpy_dev              | Version: Not installed
+jax.numpy                 | Version: Not installed
+math                      | Version: Not installed
+matplotlib                | Version: 3.10.7
+matplotlib.collections    | Version: Not installed
+matplotlib.colors         | Version: Not installed
+matplotlib.dates          | Version: Not installed
+matplotlib.lines          | Version: Not installed
+matplotlib.patches        | Version: Not installed
+matplotlib.pylab          | Version: Not installed
+matplotlib.pyplot         | Version: Not installed
+matplotlib.table          | Version: Not installed
+matplotlib.units          | Version: Not installed
+numpy                     | Version: 2.3.3
+numpy._core               | Version: Not installed
+numpy._core._internal     | Version: Not installed
+numpy._core._multiarray_tests | Version: Not installed
+numpy._core._multiarray_umath | Version: Not installed
+numpy._core._operand_flag_tests | Version: Not installed
+numpy._core._rational_tests | Version: Not installed
+numpy._core._struct_ufunc_tests | Version: Not installed
+numpy._core._umath_tests  | Version: Not installed
+numpy._core.fromnumeric   | Version: Not installed
+numpy._core.include       | Version: Not installed
+numpy._core.lib.pkgconfig | Version: Not installed
+numpy._core.multiarray    | Version: Not installed
+numpy._core.numeric       | Version: Not installed
+numpy._core.numerictypes  | Version: Not installed
+numpy._core.umath         | Version: Not installed
+numpy._globals            | Version: Not installed
+numpy._typing             | Version: Not installed
+numpy.char                | Version: Not installed
+numpy.core                | Version: Not installed
+numpy.ctypeslib           | Version: Not installed
+numpy.distutils           | Version: Not installed
+numpy.distutils.fcompiler | Version: Not installed
+numpy.dtypes              | Version: Not installed
+numpy.exceptions          | Version: Not installed
+numpy.f2py                | Version: Not installed
+numpy.fft                 | Version: Not installed
+numpy.lib._datasource     | Version: Not installed
+numpy.lib._function_base_impl | Version: Not installed
+numpy.lib._utils_impl     | Version: Not installed
+numpy.lib.array_utils     | Version: Not installed
+numpy.linalg              | Version: Not installed
+numpy.linalg._umath_linalg | Version: Not installed
+numpy.linalg.lapack_lite  | Version: Not installed
+numpy.ma                  | Version: Not installed
+numpy.ma.core             | Version: Not installed
+numpy.ma.mrecords         | Version: Not installed
+numpy.matlib              | Version: Not installed
+numpy.matrixlib           | Version: Not installed
+numpy.polynomial          | Version: Not installed
+numpy.polynomial.chebyshev | Version: Not installed
+numpy.polynomial.hermite  | Version: Not installed
+numpy.polynomial.hermite_e | Version: Not installed
+numpy.polynomial.laguerre | Version: Not installed
+numpy.polynomial.legendre | Version: Not installed
+numpy.polynomial.polynomial | Version: Not installed
+numpy.polynomial.polyutils | Version: Not installed
+numpy.random              | Version: Not installed
+numpy.rec                 | Version: Not installed
+numpy.somesubmodule.somefile | Version: Not installed
+numpy.strings             | Version: Not installed
+numpy.testing             | Version: Not installed
+numpy.typing              | Version: Not installed
+numpy_distutils           | Version: Not installed
+numpy_distutils.command.build_flib | Version: Not installed
+numpy_distutils.fcompiler | Version: Not installed
+numpy_pickle              | Version: Not installed
+numpy_pickle_compat       | Version: Not installed
+onnx.numpy_helper         | Version: Not installed
+pandas                    | Version: 2.3.2
+pandas._config.config     | Version: Not installed
+pandas._libs.groupby      | Version: Not installed
+pandas._libs.index        | Version: Not installed
+pandas._libs.join         | Version: Not installed
+pandas._libs.json         | Version: Not installed
+pandas._libs.missing      | Version: Not installed
+pandas._libs.ops          | Version: Not installed
+pandas._libs.pandas_datetime | Version: Not installed
+pandas._libs.pandas_parser | Version: Not installed
+pandas._libs.parsers      | Version: Not installed
+pandas._libs.reshape      | Version: Not installed
+pandas._libs.sparse       | Version: Not installed
+pandas._libs.testing      | Version: Not installed
+pandas._libs.tslibs.offsets | Version: Not installed
+pandas._libs.window.aggregations | Version: Not installed
+pandas._testing           | Version: Not installed
+pandas.compat.compressors | Version: Not installed
+pandas.core.algorithms    | Version: Not installed
+pandas.core.arrays.arrow.extension_types | Version: Not installed
+pandas.core.common        | Version: Not installed
+pandas.core.config_init   | Version: Not installed
+pandas.core.dtypes.common | Version: Not installed
+pandas.core.dtypes.concat | Version: Not installed
+pandas.core.indexes.base  | Version: Not installed
+pandas.core.reshape.tile  | Version: Not installed
+pandas.core.tools.datetimes | Version: Not installed
+pandas.io.common          | Version: Not installed
+pandas.io.formats.format  | Version: Not installed
+pandas.io.parsers.readers | Version: Not installed
+pandas.io.sas.sas_constants | Version: Not installed
+pandas.plotting           | Version: Not installed
+pandas.plotting._matplotlib.converter | Version: Not installed
+pandas.util._test_decorators | Version: Not installed
+pandas_dtype              | Version: Not installed
+pyarrow_array_to_numpy_and_mask | Version: Not installed
+register_pandas_matplotlib_converters | Version: Not installed
+scimath                   | Version: Not installed
+scipy                     | Version: 1.16.2
+scipy._lib._elementwise_iterative_method | Version: Not installed
+scipy._lib.array_api_extra | Version: Not installed
+scipy._lib.uarray         | Version: Not installed
+scipy.constants           | Version: Not installed
+scipy.constants._codata   | Version: Not installed
+scipy.datasets            | Version: Not installed
+scipy.fft                 | Version: Not installed
+scipy.fft._pocketfft.helper | Version: Not installed
+scipy.integrate._test_multivariate | Version: Not installed
+scipy.integrate._test_odeint_banded | Version: Not installed
+scipy.interpolate         | Version: Not installed
+scipy.interpolate._fitpack_impl | Version: Not installed
+scipy.interpolate._fitpack_repro | Version: Not installed
+scipy.interpolate._interpnd | Version: Not installed
+scipy.io                  | Version: Not installed
+scipy.linalg              | Version: Not installed
+scipy.sparse              | Version: Not installed
+scipy.sparse.linalg       | Version: Not installed
+scipy.spatial._qhull      | Version: Not installed
+scipy.spatial.distance    | Version: Not installed
+scipy.special             | Version: Not installed
+scipy.stats               | Version: Not installed
+seaborn                   | Version: 0.13.2
+tensorflow                | Version: Not installed
+to_numpy_dtype_inference  | Version: Not installed
+torch                     | Version: 2.8.0+cpu
+torch.backends.cudnn      | Version: Not installed
+torch.cuda                | Version: Not installed
+torch.nn                  | Version: Not installed
+torch.optim               | Version: Not installed
+umath                     | Version: Not installed
+with_numpy                | Version: Not installed
+
+⚙️ INSTALLED VERSIONS SUMMARY:
+--------------------------------------------------
+numpy           : 2.3.3
+pandas          : 2.3.2
+scipy           : 1.16.2
+sklearn         : Not installed
+tensorflow      : Not installed
+torch           : 2.8.0+cpu
+matplotlib      : 3.10.7
+docker          : 7.1.0
+seaborn         : 0.13.2
+No read errors encountered.

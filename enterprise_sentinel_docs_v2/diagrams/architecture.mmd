@@ -1,0 +1,37 @@
+```mermaid
+graph TB
+    classDef quantum fill:#e1f5fe
+    classDef security fill:#fce4ec
+    classDef ml fill:#e8f5e8
+    classDef data fill:#fff3e0
+    classDef other fill:#f3e5f5
+    
+    subgraph "AI Sentinel Architecture"
+
+        subgraph "Other Engines"
+            anomaly_engine[anomaly_engine]
+            drift_detector[drift_detector]
+            dynamic_engine_fixed[dynamic_engine_fixed]
+            engine_stubs[engine_stubs]
+            test_all_engines[test_all_engines]
+        end
+
+        subgraph "Security Engines"
+            enterprise_security[enterprise_security]
+        end
+
+        subgraph "Quantum Engines"
+            quantum_engines_fixed[quantum_engines_fixed]
+            quantum_fix[quantum_fix]
+            quantum_pbkdf2_final[quantum_pbkdf2_final]
+            quantum_stubs[quantum_stubs]
+        end
+    
+    end
+
+    %% Connections
+    quantum_engines_fixed --> enterprise_security
+    anomaly_engine --> drift_detector
+    dynamic_engine_fixed --> quantum_engines_fixed
+
+```

@@ -1,0 +1,1 @@
+class DatabaseConfig:\n    url = "sqlite:///enterprise_sentinel_2025.db"\n    postgres_url = "postgresql://user:pass@localhost/sentinel"\n    duckdb_path = "analytics_data.duckdb"\n\n# Add to config module\nimport sys\nimport inspect\nfor name, obj in inspect.getmembers(sys.modules[__name__]):\n    if not name.startswith('_'):\n        setattr(sys.modules['config'], name, obj)\n

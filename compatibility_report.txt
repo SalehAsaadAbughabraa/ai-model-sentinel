@@ -1,0 +1,62 @@
+================================================================================
+ENTERPRISE AI MODEL SENTINEL - COMPATIBILITY REPORT
+================================================================================
+Timestamp: 2025-10-25T21:59:55.648684
+Overall Status: FAIL
+
+SYSTEM ENVIRONMENT:
+----------------------------------------
+Python Version: 3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)]
+Environment OK: False
+Missing Packages: scikit-learn, seaborn
+
+ENGINES SUMMARY:
+----------------------------------------
+data_quality_engine: ✅ WORKING
+explainability_engine: ❌ FAILING
+fusion_engine: ❌ FAILING
+model_monitoring_engine: ✅ WORKING
+security_engine: ✅ WORKING
+
+DETAILED RESULTS:
+----------------------------------------
+
+DATA_QUALITY_ENGINE:
+  Import Successful: True
+  Class Found: True
+  Classes: DataQualityEngine
+  Basic Tests Passed: True
+
+EXPLAINABILITY_ENGINE:
+  Import Successful: False
+  Class Found: False
+  Basic Tests Passed: False
+  Errors:
+    - Import failed: No module named 'seaborn'
+
+FUSION_ENGINE:
+  Import Successful: False
+  Class Found: False
+  Basic Tests Passed: False
+  Errors:
+    - Import failed: No module named 'docker'
+
+MODEL_MONITORING_ENGINE:
+  Import Successful: True
+  Class Found: True
+  Classes: ModelMonitoringEngine
+  Basic Tests Passed: True
+
+SECURITY_ENGINE:
+  Import Successful: True
+  Class Found: True
+  Classes: SecurityEngine
+  Basic Tests Passed: True
+
+RECOMMENDATIONS:
+----------------------------------------
+• Address critical issues in failing engines
+
+================================================================================
+COMPATIBILITY CHECK COMPLETED
+================================================================================

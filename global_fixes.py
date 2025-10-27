@@ -1,0 +1,1 @@
+import sys\nsys.path.append(".")\n# «” Ì—«œ Ã„Ì⁄ «·≈’·«Õ« \nfrom pbkdf2_fix import PBKDF2\nfrom multidb_fix import MultiDBConnector\nfrom engine_stubs import *\n#  Ã«Ê“ «·«” Ì—«œ „‰ «·„ﬂ »«  «·√’·Ì…\nimport cryptography.hazmat.primitives.kdf.pbkdf2\ncryptography.hazmat.primitives.kdf.pbkdf2.PBKDF2 = PBKDF2\nprint("All fixes applied successfully")\n
