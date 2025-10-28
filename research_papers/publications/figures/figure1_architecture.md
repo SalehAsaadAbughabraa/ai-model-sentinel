@@ -1,0 +1,12 @@
+"System Architecture Diagram" 
+"===========================" 
+ 
+"ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿" 
+"³                   AI Model Sentinel v2.0.0                  ³" 
+"ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´" 
+"³  Layer 1: Presentation Layer (Web Interface + REST API)     ³" 
+"³  Layer 2: Engine Coordination (17 Specialized Engines)      ³" 
+"³  Layer 3: Quantum Security (AES-256 + Quantum Enhancement)  ³" 
+"³  Layer 4: Data Management (Real-time Analytics + Storage)   ³" 
+"³  Layer 5: Infrastructure (Auto-backup + Enterprise Integration)³" 
+"ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ" 

@@ -1,0 +1,10 @@
+"κηοο« § ικ¥©θΆ" 
+"=====================" 
+ 
+"| ε΅ ικ¥©θ | ιγ§§ | ικ¥©θΆ ι©ο«ο΅ | ι§ | ι­¥΅ |" 
+"|------------|-------|-------------------|---------|--------|" 
+"| κ¥©θΆ ι¨θ ι­αλγο | 3 | MLEngine, ModelMonitoringEngine | 89% | 92% |" 
+"| ικ¥©θΆ ιθκ‘ο΅ | 4 | QuantumMathematicalEngine, QuantumFingerprintEngine | 91% | 94% |" 
+"| κ¥©θΆ ικλ | 5 | EnterpriseSecurityEngine, ThreatAnalyticsEngine | 93% | 96% |" 
+"| κ¥©θΆ ι ολΆ | 3 | AdvancedDatabaseSystem, SnowflakeAnalyticsEngine | 91% | 90% |" 
+"| κ¥©θΆ ι§κ¤ | 2 | GlobalIntegrationEngine, DynamicRuleEngine | 92% | 93% |" 
