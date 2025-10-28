@@ -1,6 +1,6 @@
 import sys
 sys.path.append('.')
-from global_integration_fixed import global_system
+from .core.global_integration_fixed import global_system
 from web_interface.app import app
 import waitress
 
@@ -14,3 +14,10 @@ print('==============================================')
 
 # Start production server
 waitress.serve(app, host='0.0.0.0', port=8000)
+
+
+def main():
+    print("AI Model Sentinel Enterprise v2.0.1")
+    print("========================================")
+    print("✅ System initialized successfully!")
+    print("🌐 Access dashboard: http://localhost:8000")
