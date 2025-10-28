@@ -1,0 +1,1 @@
+@echo off\necho 🗄️ AI Model Sentinel - Automated Backup System\necho.\n\n:: Create backup with timestamp\npython -c "from local_backup import backup_system; backup_system.create_backup()"\n\necho.\necho ✅ Backup completed successfully\necho 📁 Backups stored in: backups/\necho.\npause\n

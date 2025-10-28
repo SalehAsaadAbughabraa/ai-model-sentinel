@@ -1,0 +1,27 @@
+# Prometheus monitoring configuration
+scrape_configs:
+  - job_name: 'ai-sentinel'
+    static_configs:
+      - targets: ['ai-sentinel:9090']
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+# Alert rules
+groups:
+  - name: ai-sentinel-alerts
+    rules:
+      - alert: HighThreatRate
+        expr: rate(ai_sentinel_high_threat_scans_total[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High threat detection rate"
+          
+      - alert: ServiceDown
+        expr: up{job="ai-sentinel"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "AI Sentinel service is down"

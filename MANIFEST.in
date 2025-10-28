@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include pyproject.toml
+recursive-include app *.py
+recursive-include engines *.py
+recursive-include tools *.py
+recursive-include enterprise_sentinel_docs_v2 *.md *.json

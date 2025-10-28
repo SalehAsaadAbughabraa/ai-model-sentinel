@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  ai-sentinel:
+    image: ai-sentinel:latest
+    environment:
+      - ENV=production
+      # Security - Mount from secrets
+      - JWT_SECRET_FILE=/run/secrets/jwt_secret
+      - ENCRYPTION_KEY_FILE=/run/secrets/encryption_key
+    env_file:
+      - production.env
+    secrets:
+      - jwt_secret
+      - encryption_key
+      - signing_key
+    volumes:
+      - /var/uploads/ai_sentinel:/var/uploads/ai_sentinel
+      - /var/cache/ai_sentinel:/var/cache/ai_sentinel
+    ports:
+      - "8000:8000"
+      - "9090:9090"  # Prometheus metrics
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+
+secrets:
+  jwt_secret:
+    external: true
+  encryption_key:
+    external: true
+  signing_key:
+    file: ./secrets/signing_key.pem

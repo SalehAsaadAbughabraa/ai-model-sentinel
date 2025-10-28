@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Sentinel Enterprise v2.0.0</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 🎯 ENTERPRISE ENGINES STYLES */
+        .engines-discovery {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .engines-discovery::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+            animation: rainbow-border 3s linear infinite;
+        }
+
+        .engines-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .engines-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .engines-title i {
+            color: #4ecdc4;
+            font-size: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        .engines-count {
+            background: rgba(78, 205, 196, 0.2);
+            color: #4ecdc4;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            border: 1px solid rgba(78, 205, 196, 0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .engines-controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-group label {
+            color: #b8b8b8;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .filter-group select {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 0.75rem;
+            color: white;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .filter-group select:focus {
+            outline: none;
+            border-color: #4ecdc4;
+            box-shadow: 0 0 0 2px rgba(78, 205, 196, 0.3);
+        }
+
+        .refresh-button {
+            background: linear-gradient(135deg, #4ecdc4, #44a08d);
+            border: none;
+            border-radius: 10px;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-self: start;
+            align-self: end;
+        }
+
+        .refresh-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(78, 205, 196, 0.3);
+        }
+
+        .engines-stats {
+            margin-bottom: 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .stat-card:hover::before {
+            left: 100%;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(78, 205, 196, 0.5);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4ecdc4;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #b8b8b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .engines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .engine-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .engine-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+        }
+
+        .engine-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(78, 205, 196, 0.5);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .engine-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .engine-name {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 700;
+            flex: 1;
+        }
+
+        .engine-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .engine-status.active {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+            border: 1px solid rgba(46, 204, 113, 0.3);
+        }
+
+        .engine-status.testing {
+            background: rgba(241, 196, 15, 0.2);
+            color: #f1c40f;
+            border: 1px solid rgba(241, 196, 15, 0.3);
+        }
+
+        .engine-status.experimental {
+            background: rgba(52, 152, 219, 0.2);
+            color: #3498db;
+            border: 1px solid rgba(52, 152, 219, 0.3);
+        }
+
+        .engine-status.library {
+            background: rgba(155, 89, 182, 0.2);
+            color: #9b59b6;
+            border: 1px solid rgba(155, 89, 182, 0.3);
+        }
+
+        .engine-category {
+            color: #4ecdc4;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .engine-source {
+            color: #b8b8b8;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .engine-health {
+            margin-bottom: 1rem;
+        }
+
+        .health-label {
+            color: #b8b8b8;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: between;
+        }
+
+        .health-bar {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            height: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .health-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 1s ease-in-out;
+            position: relative;
+        }
+
+        .health-fill.excellent {
+            background: linear-gradient(90deg, #2ecc71, #27ae60);
+        }
+
+        .health-fill.good {
+            background: linear-gradient(90deg, #f1c40f, #f39c12);
+        }
+
+        .health-fill.fair {
+            background: linear-gradient(90deg, #e67e22, #d35400);
+        }
+
+        .health-fill.poor {
+            background: linear-gradient(90deg, #e74c3c, #c0392b);
+            animation: pulse-alert 2s infinite;
+        }
+
+        .engine-performance {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .performance-label {
+            color: #b8b8b8;
+            font-size: 0.9rem;
+        }
+
+        .performance-stars {
+            display: flex;
+            gap: 2px;
+        }
+
+        .star {
+            color: #f1c40f;
+            font-size: 0.8rem;
+        }
+
+        .engine-dependencies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .dependency-tag {
+            background: rgba(52, 152, 219, 0.2);
+            color: #3498db;
+            padding: 0.25rem 0.5rem;
+            border-radius: 15px;
+            font-size: 0.7rem;
+            border: 1px solid rgba(52, 152, 219, 0.3);
+        }
+
+        .engine-last-seen {
+            color: #888;
+            font-size: 0.8rem;
+            text-align: right;
+        }
+
+        .engines-categories {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .categories-title {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .category-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .category-item:hover {
+            transform: scale(1.05);
+            border-color: rgba(78, 205, 196, 0.5);
+        }
+
+        .category-name {
+            color: #4ecdc4;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-count {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .no-engines {
+            text-align: center;
+            color: #b8b8b8;
+            padding: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* 🎨 ANIMATIONS */
+        @keyframes rainbow-border {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 5px rgba(78, 205, 196, 0.5); }
+            to { box-shadow: 0 0 20px rgba(78, 205, 196, 0.8); }
+        }
+
+        @keyframes pulse-alert {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .engine-card {
+            animation: slideIn 0.6s ease-out;
+        }
+
+        /* 📱 RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .engines-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .engines-controls {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .engines-discovery {
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+            
+            .engines-title {
+                font-size: 1.4rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="enterprise-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="logo-text">AI SENTINEL ENTERPRISE</span>
+                </div>
+                <div class="version">v2.0.0</div>
+            </div>
+            <div class="header-info">
+                <div class="status-indicator">
+                    <span class="status-dot live"></span>
+                    <span>LIVE</span>
+                </div>
+                <div class="datetime" id="currentDateTime"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard-container">
+        <!-- System Overview -->
+        <section class="system-overview">
+            <div class="section-header">
+                <h2><i class="fas fa-desktop"></i> System Overview</h2>
+                <span class="last-update" id="lastUpdateTime">Last updated: --:--:--</span>
+            </div>
+
+            <div class="metrics-grid">
+                <!-- System Health -->
+                <div class="metric-card health">
+                    <div class="metric-header">
+                        <h3>System Health</h3>
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="metric-value" id="systemHealth">--%</div>
+                    <div class="metric-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="healthProgress"></div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="healthStatus">Loading...</div>
+                </div>
+
+                <!-- Threat Level -->
+                <div class="metric-card threat">
+                    <div class="metric-header">
+                        <h3>Threat Level</h3>
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="metric-value" id="threatLevel">--</div>
+                    <div class="threat-indicator">
+                        <div class="threat-bar">
+                            <div class="threat-fill" id="threatFill"></div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="threatStatus">Analyzing...</div>
+                </div>
+
+                <!-- Performance -->
+                <div class="metric-card performance">
+                    <div class="metric-header">
+                        <h3>Performance</h3>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="metric-value" id="performanceValue">--%</div>
+                    <div class="metric-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="performanceProgress"></div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="performanceStatus">Monitoring...</div>
+                </div>
+
+                <!-- Security Score -->
+                <div class="metric-card security">
+                    <div class="metric-header">
+                        <h3>Security Score</h3>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="metric-value" id="securityScore">--%</div>
+                    <div class="metric-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="securityProgress"></div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="securityStatus">Evaluating...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-time Metrics -->
+        <section class="detailed-metrics">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-bar"></i> Real-time Metrics</h2>
+            </div>
+
+            <div class="metrics-detail-grid">
+                <!-- CPU Performance -->
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <i class="fas fa-microchip"></i>
+                        <h4>CPU Performance</h4>
+                    </div>
+                    <div class="detail-value" id="cpuUsage">--%</div>
+                    <div class="detail-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="cpuProgress"></div>
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <span>Cores: <span id="cpuCores">--</span></span>
+                        <span>Load: <span id="cpuLoad">--</span></span>
+                    </div>
+                </div>
+
+                <!-- Memory Usage -->
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <i class="fas fa-memory"></i>
+                        <h4>Memory Usage</h4>
+                    </div>
+                    <div class="detail-value" id="memoryUsage">--%</div>
+                    <div class="detail-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="memoryProgress"></div>
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <span>Used: <span id="memoryUsed">-- GB</span></span>
+                        <span>Available: <span id="memoryAvailable">-- GB</span></span>
+                    </div>
+                </div>
+
+                <!-- Disk Storage -->
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <i class="fas fa-hdd"></i>
+                        <h4>Disk Storage</h4>
+                    </div>
+                    <div class="detail-value" id="diskUsage">--%</div>
+                    <div class="detail-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="diskProgress"></div>
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <span>Used: <span id="diskUsed">-- GB</span></span>
+                        <span>Free: <span id="diskFree">-- GB</span></span>
+                    </div>
+                </div>
+
+                <!-- Network Activity -->
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Network Activity</h4>
+                    </div>
+                    <div class="detail-value" id="networkActivity">--%</div>
+                    <div class="detail-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="networkProgress"></div>
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <span>Sent: <span id="networkSent">-- MB</span></span>
+                        <span>Received: <span id="networkReceived">-- MB</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🚀 ENTERPRISE ENGINES DISCOVERY -->
+        <section class="engines-discovery">
+            <div class="engines-header">
+                <div class="engines-title">
+                    <i class="fas fa-cogs"></i>
+                    AI Engines Discovery
+                </div>
+                <div class="engines-count" id="enginesCount">Discovering engines...</div>
+            </div>
+
+            <div class="engines-container">
+                <div class="engines-controls">
+                    <div class="filter-group">
+                        <label for="categoryFilter">Filter by Category:</label>
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="ai_ml">AI/ML Engines</option>
+                            <option value="security">Security Engines</option>
+                            <option value="quantum">Quantum Engines</option>
+                            <option value="data">Data Engines</option>
+                            <option value="monitoring">Monitoring Engines</option>
+                            <option value="analytics">Analytics Engines</option>
+                            <option value="fusion">Fusion Engines</option>
+                            <option value="testing">Testing Engines</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="statusFilter">Filter by Status:</label>
+                        <select id="statusFilter">
+                            <option value="all">All Status</option>
+                            <option value="active">Active</option>
+                            <option value="testing">Testing</option>
+                            <option value="experimental">Experimental</option>
+                            <option value="library">Library</option>
+                        </select>
+                    </div>
+                    <button id="refreshEngines" class="refresh-button">
+                        <i class="fas fa-sync-alt"></i>
+                        Refresh Engines
+                    </button>
+                </div>
+
+                <div class="engines-stats" id="enginesStats">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+
+                <div class="engines-grid" id="enginesGrid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+
+                <div class="engines-categories">
+                    <div class="categories-title">Engines by Category</div>
+                    <div class="categories-grid" id="enginesCategories">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Model Security Analysis -->
+        <section class="security-analysis">
+            <div class="section-header">
+                <h2><i class="fas fa-robot"></i> AI Model Security Analysis</h2>
+            </div>
+
+            <div class="analysis-container">
+                <div class="analysis-controls">
+                    <div class="input-group">
+                        <label for="modelId">Model ID:</label>
+                        <input type="text" id="modelId" placeholder="production_model_001" value="production_model_001">
+                    </div>
+                    <div class="input-group">
+                        <label for="dataSize">Data Size (samples):</label>
+                        <input type="number" id="dataSize" value="1024" min="10" max="10000">
+                    </div>
+                    <button id="analyzeBtn" class="analyze-button">
+                        <i class="fas fa-play"></i>
+                        Run Security Analysis
+                    </button>
+                </div>
+
+                <div class="analysis-results" id="analysisResults" style="display: none;">
+                    <div class="result-header">
+                        <h4>Analysis Results</h4>
+                        <span class="analysis-id" id="analysisId"></span>
+                    </div>
+
+                    <div class="result-grid">
+                        <div class="result-card">
+                            <div class="result-label">Health Score</div>
+                            <div class="result-value health-score" id="healthScore">--</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-label">Threat Level</div>
+                            <div class="result-value threat-level" id="resultThreatLevel">--</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-label">Analysis Time</div>
+                            <div class="result-value" id="analysisTime">-- ms</div>
+                        </div>
+                    </div>
+
+                    <div class="risk-factors">
+                        <h5>Risk Factors</h5>
+                        <ul id="riskFactorsList"></ul>
+                    </div>
+
+                    <div class="recommendations">
+                        <h5>Recommendations</h5>
+                        <ul id="recommendationsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Backup Status -->
+        <section class="backup-status">
+            <div class="section-header">
+                <h2><i class="fas fa-cloud-upload-alt"></i> Cloud Backup Status</h2>
+            </div>
+
+            <div class="backup-container">
+                <div class="backup-info">
+                    <div class="backup-card">
+                        <div class="backup-header">
+                            <i class="fas fa-database"></i>
+                            <h4>Backblaze B2</h4>
+                        </div>
+                        <div class="backup-details">
+                            <div class="backup-status-indicator">
+                                Status: <span class="status" id="backupStatus">Checking...</span>
+                            </div>
+                            <div class="backup-metrics">
+                                <div>Bucket: <span id="backupBucket">ai-sentinel-backups</span></div>
+                                <div>Files: <span id="backupFiles">--</span></div>
+                                <div>Size: <span id="backupSize">-- MB</span></div>
+                            </div>
+                        </div>
+                        <button id="manualBackupBtn" class="backup-button">
+                            <i class="fas fa-sync"></i>
+                            Manual Backup
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="enterprise-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="copyright">
+                    &copy; 2025 Saleh Asaad Abughabra. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <span>AI Model Sentinel Enterprise v2.0.0</span>
+                    <span>Security Level: CLASSIFIED</span>
+                </div>
+            </div>
+            <div class="system-stats">
+                <span>Uptime: <span id="systemUptime">00:00:00</span></span>
+                <span>Analyses: <span id="totalAnalyses">0</span></span>
+                <span>Engines: <span id="totalEngines">0</span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script>
+        // 🚀 ENTERPRISE ENGINES JAVASCRIPT
+        class EnginesManager {
+            constructor(dashboard) {
+                this.dashboard = dashboard;
+                this.engines = [];
+                this.filteredEngines = [];
+            }
+
+            async init() {
+                await this.loadEnginesData();
+                this.setupEventListeners();
+                this.startRealTimeUpdates();
+            }
+
+            setupEventListeners() {
+                document.getElementById('refreshEngines').addEventListener('click', () => this.loadEnginesData());
+                document.getElementById('categoryFilter').addEventListener('change', () => this.filterEngines());
+                document.getElementById('statusFilter').addEventListener('change', () => this.filterEngines());
+            }
+
+            startRealTimeUpdates() {
+                // Update engines data every 30 seconds
+                setInterval(() => this.loadEnginesData(), 30000);
+            }
+
+            async loadEnginesData() {
+                try {
+                    const response = await fetch('/api/v1/enterprise/engines');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    
+                    const data = await response.json();
+                    
+                    if (data.status === 'SUCCESS') {
+                        this.engines = data.engines;
+                        this.filteredEngines = [...this.engines];
+                        this.displayEnginesData();
+                        this.updateEnginesStats();
+                        this.updateEnginesCount();
+                    }
+                } catch (error) {
+                    console.error('Error loading engines data:', error);
+                    this.dashboard.showError('Failed to load engines data');
+                }
+            }
+
+            async loadEnginesStats() {
+                try {
+                    const response = await fetch('/api/v1/enterprise/engines/stats');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    
+                    const stats = await response.json();
+                    this.updateEnginesStats(stats);
+                } catch (error) {
+                    console.error('Error loading engines stats:', error);
+                }
+            }
+
+            displayEnginesData() {
+                const enginesGrid = document.getElementById('enginesGrid');
+                
+                if (!this.filteredEngines.length) {
+                    enginesGrid.innerHTML = '<div class="no-engines">No engines match the current filters</div>';
+                    return;
+                }
+
+                let html = '';
+                this.filteredEngines.forEach(engine => {
+                    const healthPercent = (engine.health * 100).toFixed(1);
+                    const performancePercent = (engine.performance * 100).toFixed(1);
+                    const healthClass = this.getHealthClass(engine.health);
+                    const stars = this.getPerformanceStars(engine.performance);
+                    
+                    html += `
+                        <div class="engine-card" data-category="${engine.category}" data-status="${engine.status}">
+                            <div class="engine-header">
+                                <div class="engine-name">${engine.name}</div>
+                                <div class="engine-status ${engine.status}">${engine.status}</div>
+                            </div>
+                            <div class="engine-category">${this.formatCategory(engine.category)}</div>
+                            <div class="engine-source">${engine.source}</div>
+                            
+                            <div class="engine-health">
+                                <div class="health-label">
+                                    <span>Health</span>
+                                    <span>${healthPercent}%</span>
+                                </div>
+                                <div class="health-bar">
+                                    <div class="health-fill ${healthClass}" style="width: ${healthPercent}%"></div>
+                                </div>
+                            </div>
+
+                            <div class="engine-performance">
+                                <span class="performance-label">Performance:</span>
+                                <div class="performance-stars">${stars}</div>
+                                <span style="color: #b8b8b8; font-size: 0.8rem;">${performancePercent}%</span>
+                            </div>
+
+                            ${engine.dependencies && engine.dependencies.length ? `
+                                <div class="engine-dependencies">
+                                    ${engine.dependencies.map(dep => `<span class="dependency-tag">${dep}</span>`).join('')}
+                                </div>
+                            ` : ''}
+
+                            <div class="engine-last-seen">Last seen: ${new Date(engine.last_seen).toLocaleTimeString()}</div>
+                        </div>
+                    `;
+                });
+                
+                enginesGrid.innerHTML = html;
+            }
+
+            updateEnginesStats(stats = null) {
+                const statsElement = document.getElementById('enginesStats');
+                
+                if (stats) {
+                    // Use API stats if provided
+                    let statsHtml = `
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-value">${stats.total_engines || 0}</div>
+                                <div class="stat-label">Total Engines</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">${stats.active_engines || 0}</div>
+                                <div class="stat-label">Active Engines</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">${Math.round((stats.average_health || 0) * 100)}%</div>
+                                <div class="stat-label">Avg Health</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">${Math.round((stats.average_performance || 0) * 100)}%</div>
+                                <div class="stat-label">Avg Performance</div>
+                            </div>
+                    `;
+                    
+                    if (stats.categories) {
+                        Object.entries(stats.categories).forEach(([category, count]) => {
+                            if (count > 0) {
+                                statsHtml += `
+                                    <div class="stat-card">
+                                        <div class="stat-value">${count}</div>
+                                        <div class="stat-label">${this.formatCategory(category)}</div>
+                                    </div>
+                                `;
+                            }
+                        });
+                    }
+                    
+                    statsHtml += '</div>';
+                    statsElement.innerHTML = statsHtml;
+                } else {
+                    // Calculate stats from filtered engines
+                    const totalEngines = this.filteredEngines.length;
+                    const activeEngines = this.filteredEngines.filter(e => e.status === 'active').length;
+                    const avgHealth = totalEngines > 0 ? 
+                        this.filteredEngines.reduce((sum, e) => sum + e.health, 0) / totalEngines : 0;
+                    const avgPerformance = totalEngines > 0 ? 
+                        this.filteredEngines.reduce((sum, e) => sum + e.performance, 0) / totalEngines : 0;
+
+                    const categories = {};
+                    this.filteredEngines.forEach(engine => {
+                        categories[engine.category] = (categories[engine.category] || 0) + 1;
+                    });
+
+                    let statsHtml = `
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-value">${totalEngines}</div>
+                                <div class="stat-label">Total Engines</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">${activeEngines}</div>
+                                <div class="stat-label">Active Engines</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">${Math.round(avgHealth * 100)}%</div>
+                                <div class="stat-label">Avg Health</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">${Math.round(avgPerformance * 100)}%</div>
+                                <div class="stat-label">Avg Performance</div>
+                            </div>
+                    `;
+
+                    Object.entries(categories).forEach(([category, count]) => {
+                        statsHtml += `
+                            <div class="stat-card">
+                                <div class="stat-value">${count}</div>
+                                <div class="stat-label">${this.formatCategory(category)}</div>
+                            </div>
+                        `;
+                    });
+
+                    statsHtml += '</div>';
+                    statsElement.innerHTML = statsHtml;
+                }
+
+                // Update categories display
+                this.updateCategoriesDisplay();
+            }
+
+            updateCategoriesDisplay() {
+                const categoriesElement = document.getElementById('enginesCategories');
+                const categories = {};
+
+                this.filteredEngines.forEach(engine => {
+                    categories[engine.category] = (categories[engine.category] || 0) + 1;
+                });
+
+                let categoriesHtml = '';
+                Object.entries(categories).forEach(([category, count]) => {
+                    categoriesHtml += `
+                        <div class="category-item">
+                            <div class="category-name">${this.formatCategory(category)}</div>
+                            <div class="category-count">${count}</div>
+                        </div>
+                    `;
+                });
+
+                categoriesElement.innerHTML = categoriesHtml;
+            }
+
+            updateEnginesCount() {
+                const enginesCount = document.getElementById('enginesCount');
+                const totalEngines = document.getElementById('totalEngines');
+                
+                enginesCount.textContent = `${this.filteredEngines.length} Engines Displayed`;
+                totalEngines.textContent = this.engines.length;
+            }
+
+            filterEngines() {
+                const categoryFilter = document.getElementById('categoryFilter').value;
+                const statusFilter = document.getElementById('statusFilter').value;
+
+                this.filteredEngines = this.engines.filter(engine => {
+                    const categoryMatch = categoryFilter === 'all' || engine.category === categoryFilter;
+                    const statusMatch = statusFilter === 'all' || engine.status === statusFilter;
+                    return categoryMatch && statusMatch;
+                });
+
+                this.displayEnginesData();
+                this.updateEnginesStats();
+                this.updateEnginesCount();
+            }
+
+            getHealthClass(health) {
+                if (health >= 0.9) return 'excellent';
+                if (health >= 0.7) return 'good';
+                if (health >= 0.5) return 'fair';
+                return 'poor';
+            }
+
+            getPerformanceStars(performance) {
+                const starCount = Math.ceil(performance * 5);
+                let stars = '';
+                for (let i = 0; i < 5; i++) {
+                    stars += `<i class="fas fa-star star" style="${i < starCount ? 'color: #f1c40f' : 'color: #555'}"></i>`;
+                }
+                return stars;
+            }
+
+            formatCategory(category) {
+                const categoryMap = {
+                    'ai_ml': 'AI/ML Engine',
+                    'security': 'Security Engine',
+                    'quantum': 'Quantum Engine',
+                    'data': 'Data Engine',
+                    'monitoring': 'Monitoring Engine',
+                    'analytics': 'Analytics Engine',
+                    'fusion': 'Fusion Engine',
+                    'testing': 'Testing Engine'
+                };
+                return categoryMap[category] || category;
+            }
+        }
+
+        // Integrate with existing dashboard
+        document.addEventListener('DOMContentLoaded', () => {
+            const dashboard = new EnterpriseSentinelDashboard();
+            const enginesManager = new EnginesManager(dashboard);
+            enginesManager.init();
+            
+            // Load engines stats initially
+            enginesManager.loadEnginesStats();
+        });
+    </script>
+</body>
+</html>

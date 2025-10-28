@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Sentinel Enterprise v2.0.0</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="enterprise-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="logo-text">AI SENTINEL ENTERPRISE</span>
+                </div>
+                <div class="version">v2.0.0</div>
+            </div>
+            <div class="header-info">
+                <div class="status-indicator">
+                    <span class="status-dot live"></span>
+                    <span>LIVE</span>
+                </div>
+                <div class="datetime" id="currentDateTime"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="system-overview">
+            <div class="section-header">
+                <h2><i class="fas fa-desktop"></i> System Overview</h2>
+                <span class="last-update" id="lastUpdateTime">Last updated: --:--:--</span>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card health">
+                    <div class="metric-header">
+                        <h3>System Health</h3>
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="metric-value" id="systemHealth">--%</div>
+                    <div class="metric-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="healthProgress"></div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="healthStatus">Loading...</div>
+                </div>
+
+                <div class="metric-card threat">
+                    <div class="metric-header">
+                        <h3>Threat Level</h3>
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="metric-value" id="threatLevel">--</div>
+                    <div class="threat-indicator">
+                        <div class="threat-bar">
+                            <div class="threat-fill" id="threatFill"></div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="threatStatus">Analyzing...</div>
+                </div>
+
+                <div class="metric-card performance">
+                    <div class="metric-header">
+                        <h3>Performance</h3>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="metric-value" id="performanceValue">--%</div>
+                    <div class="metric-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="performanceProgress"></div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="performanceStatus">Monitoring...</div>
+                </div>
+
+                <div class="metric-card security">
+                    <div class="metric-header">
+                        <h3>Security Score</h3>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="metric-value" id="securityScore">--%</div>
+                    <div class="metric-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="securityProgress"></div>
+                        </div>
+                    </div>
+                    <div class="metric-status" id="securityStatus">Evaluating...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detailed-metrics">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-bar"></i> Real-time Metrics</h2>
+            </div>
+            
+            <div class="metrics-detail-grid">
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <i class="fas fa-microchip"></i>
+                        <h4>CPU Performance</h4>
+                    </div>
+                    <div class="detail-value" id="cpuUsage">--%</div>
+                    <div class="detail-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="cpuProgress"></div>
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <span>Cores: <span id="cpuCores">--</span></span>
+                        <span>Load: <span id="cpuLoad">--</span></span>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <i class="fas fa-memory"></i>
+                        <h4>Memory Usage</h4>
+                    </div>
+                    <div class="detail-value" id="memoryUsage">--%</div>
+                    <div class="detail-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="memoryProgress"></div>
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <span>Used: <span id="memoryUsed">-- GB</span></span>
+                        <span>Available: <span id="memoryAvailable">-- GB</span></span>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <i class="fas fa-hdd"></i>
+                        <h4>Disk Storage</h4>
+                    </div>
+                    <div class="detail-value" id="diskUsage">--%</div>
+                    <div class="detail-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="diskProgress"></div>
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <span>Used: <span id="diskUsed">-- GB</span></span>
+                        <span>Free: <span id="diskFree">-- GB</span></span>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Network Activity</h4>
+                    </div>
+                    <div class="detail-value" id="networkActivity">--%</div>
+                    <div class="detail-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="networkProgress"></div>
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <span>Sent: <span id="networkSent">-- MB</span></span>
+                        <span>Received: <span id="networkReceived">-- MB</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="security-analysis">
+            <div class="section-header">
+                <h2><i class="fas fa-robot"></i> AI Model Security Analysis</h2>
+            </div>
+            
+            <div class="analysis-container">
+                <div class="analysis-controls">
+                    <div class="input-group">
+                        <label for="modelId">Model ID:</label>
+                        <input type="text" id="modelId" placeholder="production_model_001" value="production_model_001">
+                    </div>
+                    <div class="input-group">
+                        <label for="dataSize">Data Size (samples):</label>
+                        <input type="number" id="dataSize" value="1024" min="10" max="10000">
+                    </div>
+                    <button id="analyzeBtn" class="analyze-button">
+                        <i class="fas fa-play"></i>
+                        Run Security Analysis
+                    </button>
+                </div>
+
+                <div class="analysis-results" id="analysisResults" style="display: none;">
+                    <div class="result-header">
+                        <h4>Analysis Results</h4>
+                        <span class="analysis-id" id="analysisId"></span>
+                    </div>
+                    
+                    <div class="result-grid">
+                        <div class="result-card">
+                            <div class="result-label">Health Score</div>
+                            <div class="result-value health-score" id="healthScore">--</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-label">Threat Level</div>
+                            <div class="result-value threat-level" id="resultThreatLevel">--</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-label">Analysis Time</div>
+                            <div class="result-value" id="analysisTime">-- ms</div>
+                        </div>
+                    </div>
+
+                    <div class="risk-factors">
+                        <h5>Risk Factors</h5>
+                        <ul id="riskFactorsList"></ul>
+                    </div>
+
+                    <div class="recommendations">
+                        <h5>Recommendations</h5>
+                        <ul id="recommendationsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="backup-status">
+            <div class="section-header">
+                <h2><i class="fas fa-cloud-upload-alt"></i> Cloud Backup Status</h2>
+            </div>
+            
+            <div class="backup-container">
+                <div class="backup-card">
+                    <div class="backup-header">
+                        <i class="fas fa-database"></i>
+                        <h4>Backblaze B2</h4>
+                    </div>
+                    <div class="backup-details">
+                        <div class="backup-status-indicator">
+                            Status: <span class="status" id="backupStatus">Checking...</span>
+                        </div>
+                        <div class="backup-metrics">
+                            <div>Bucket: <span id="backupBucket">ai-sentinel-backups</span></div>
+                            <div>Files: <span id="backupFiles">--</span></div>
+                            <div>Size: <span id="backupSize">-- MB</span></div>
+                        </div>
+                    </div>
+                    <button id="manualBackupBtn" class="backup-button">
+                        <i class="fas fa-sync"></i>
+                        Manual Backup
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="enterprise-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="copyright">
+                    &copy; 2025 Saleh Asaad Abughabra. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <span>AI Model Sentinel Enterprise v2.0.0</span>
+                    <span>Security Level: CLASSIFIED</span>
+                </div>
+            </div>
+            <div class="system-stats">
+                <span>Uptime: <span id="systemUptime">00:00:00</span></span>
+                <span>Analyses: <span id="totalAnalyses">0</span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
