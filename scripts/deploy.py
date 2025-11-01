@@ -56,7 +56,7 @@ class DeploymentManager:
         
         result = subprocess.run(
             cmd, 
-            shell=True, 
+            shell=False, 
             capture_output=capture_output, 
             text=True,
             timeout=300  # 5 minute timeout

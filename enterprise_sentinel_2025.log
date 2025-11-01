@@ -1,0 +1,896 @@
+2025-10-31 23:34:58,038 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-10-31 23:35:15,852 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-10-31 23:35:16,351 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-10-31 23:35:16,354 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-10-31 23:35:16,358 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-10-31 23:37:45,481 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-10-31 23:37:45,641 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-10-31 23:37:51,417 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-10-31 23:37:53,256 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-10-31 23:37:53,260 | 🚀 config | INFO | Configuration health check completed
+2025-10-31 23:37:53,263 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-10-31 23:37:58,542 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-10-31 23:37:58,556 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-10-31 23:38:02,059 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-10-31 23:38:34,816 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-10-31 23:39:21,664 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-10-31 23:39:21,713 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-10-31 23:39:47,295 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-10-31 23:39:47,296 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-10-31 23:39:47,318 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-10-31 23:40:01,605 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-10-31 23:40:04,173 | 🚀 LocalAnalyticsEngine | INFO | ✅ DuckDB engine connected successfully
+2025-10-31 23:40:04,489 | 🚀 LocalAnalyticsEngine | INFO | ✅ DuckDB schema initialized successfully
+2025-10-31 23:40:33,026 | 🚀 LocalAnalyticsEngine | INFO | ✅ ML libraries imported successfully
+2025-10-31 23:40:33,027 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-10-31 23:40:33,043 | 🚀 LocalAnalyticsEngine | INFO | ✅ DuckDB engine connected successfully
+2025-10-31 23:40:33,069 | 🚀 LocalAnalyticsEngine | INFO | ✅ DuckDB schema initialized successfully
+2025-10-31 23:40:33,079 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DatabaseEngine
+2025-10-31 23:40:33,223 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-10-31 23:40:33,224 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-10-31 23:40:33,237 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-10-31 23:40:33,372 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-10-31 23:40:33,569 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-10-31 23:40:33,695 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-10-31 23:41:02,116 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-10-31 23:41:02,119 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-10-31 23:41:02,171 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-10-31 23:41:04,205 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 15 engines, 15 operational
+2025-10-31 23:41:04,207 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-10-31 23:41:04,209 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-10-31 23:41:04,210 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-10-31 23:41:04,213 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-10-31 23:41:04,214 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-10-31 23:41:04,216 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-10-31 23:41:04,217 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-10-31 23:41:04,218 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 15
+2025-10-31 23:41:05,829 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-10-31 23:42:28,679 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:42:28,683 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:28,689 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:54,256 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:54,258 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:54,259 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:54,276 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:54,301 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:54,312 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:54,385 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:42:54,389 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:55,248 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:42:55,250 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:55,268 | 🚀 EnterpriseSentinel2025 | INFO | 📊 Enterprise analysis completed: production_model_001 - Score: 0.950
+2025-10-31 23:42:55,280 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:56,033 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:56,052 | 🚀 waitress.queue | WARNING | Task queue depth is 3
+2025-10-31 23:42:56,076 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:56,078 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:56,104 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:42:56,282 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:56,299 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:42:57,058 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:57,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:57,311 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:58,010 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:42:58,072 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:59,005 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:59,085 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:42:59,806 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:00,102 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:01,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:01,585 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:02,159 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:03,182 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:04,026 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:04,205 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:05,418 | 🚀 EnterpriseSentinel2025 | INFO | 📊 Enterprise analysis completed: production_model_001 - Score: 0.950
+2025-10-31 23:43:06,303 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:06,556 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:07,324 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:08,855 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:08,941 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:09,035 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:10,507 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:11,342 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:13,991 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:14,004 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:17,005 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:19,000 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:19,003 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:20,131 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:23,192 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:24,238 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:26,450 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:28,458 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:43:28,467 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:43:29,133 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:29,145 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:29,457 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:32,135 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:34,122 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:35,133 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:38,134 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:39,143 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:39,147 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:41,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:44,136 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:44,142 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:47,442 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:49,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:49,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:50,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:53,142 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:54,195 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:56,440 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:58,431 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:43:59,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:59,130 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:43:59,432 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:02,119 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:04,150 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:05,138 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:08,132 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:09,152 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:09,452 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:11,132 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:14,141 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:14,144 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:17,445 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:19,147 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:19,149 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:55,179 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:55,302 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:55,304 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:57,582 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:58,626 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:44:59,288 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:59,307 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:44:59,314 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:01,995 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:04,031 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:05,214 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:07,999 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:09,017 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:09,314 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:10,997 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:14,013 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:14,327 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:17,523 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:17,549 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:45:17,561 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:45:17,567 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:45:18,544 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:18,549 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:18,564 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:21,479 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:23,164 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:24,180 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:28,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:29,138 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:29,143 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:31,131 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:34,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:34,435 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:37,435 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:39,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:39,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:40,123 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:43,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:44,133 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:46,501 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:48,443 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:45:49,135 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:49,138 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:49,443 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:52,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:54,120 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:55,121 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:58,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:59,140 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:45:59,441 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:01,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:04,164 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:04,166 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:07,444 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:09,137 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:09,141 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:10,161 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:13,122 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:14,142 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:16,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:18,459 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:46:18,461 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:46:19,132 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:19,138 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:19,458 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:22,119 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:24,134 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:46:25,128 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:12,443 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:12,447 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:12,452 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:32,847 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:32,896 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:32,899 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:33,921 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:34,002 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:36,161 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:38,158 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:38,467 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:39,146 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:42,155 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:43,166 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:45,148 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:47,492 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:47:48,487 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:48,489 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:48,492 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:51,143 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:54,130 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:55,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:58,433 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:59,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:47:59,442 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:01,128 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:04,135 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:04,442 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:07,128 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:09,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:09,130 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:10,148 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:13,435 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:14,122 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:16,125 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:18,466 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:48:18,472 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:48:18,478 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:48:19,146 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:19,155 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:19,467 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:22,437 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:24,133 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:25,123 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:28,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:29,130 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:29,139 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:31,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:34,136 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:34,455 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:37,132 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:39,132 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:39,134 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:40,121 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:43,446 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:44,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:46,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:48,441 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:48:49,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:49,134 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:49,442 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:48:52,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:11,464 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:49:12,462 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:12,469 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:12,471 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:23,133 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:49:23,146 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:49:24,058 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:24,065 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:24,110 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:25,112 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:27,153 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:28,148 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:28,162 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:29,016 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:49:29,026 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:49:29,027 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:49:29,045 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-10-31 23:49:29,695 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:29,711 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:29,712 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:32,795 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:34,678 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:35,922 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:38,669 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:40,133 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:40,135 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:42,447 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:42,639 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-10-31 23:49:45,122 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:45,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:48,121 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:50,122 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:50,123 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:50,311 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-10-31 23:49:51,131 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:53,456 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-10-31 23:49:53,459 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-10-31 23:49:53,463 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-10-31 23:49:54,130 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:55,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:57,128 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:49:59,485 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:50:00,139 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:00,143 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:00,482 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:03,497 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:05,135 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:06,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:09,166 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:10,191 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:10,200 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:12,445 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:13,133 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-10-31 23:50:13,408 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-10-31 23:50:15,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:15,131 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:15,574 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-10-31 23:50:16,030 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-10-31 23:50:16,033 | 🚀 config | INFO | Configuration health check completed
+2025-10-31 23:50:16,034 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-10-31 23:50:17,324 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-10-31 23:50:17,355 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-10-31 23:50:18,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:18,147 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-10-31 23:50:20,125 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:20,128 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:21,142 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:24,134 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:24,928 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-10-31 23:50:25,121 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:27,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:29,453 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:50:29,458 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:50:30,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:30,133 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:30,450 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:33,119 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-10-31 23:50:33,169 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-10-31 23:50:33,437 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:35,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:36,136 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:39,428 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:50:56,982 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-10-31 23:50:56,984 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-10-31 23:50:57,040 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-10-31 23:51:00,655 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-10-31 23:51:03,486 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DatabaseEngine with global fixes: IO Error: Cannot open file "c:\users\steph\ai-model-sentinel\analytics_data.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\python3.13.exe (PID 5976)
+2025-10-31 23:51:03,621 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-10-31 23:51:03,622 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-10-31 23:51:03,662 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-10-31 23:51:04,782 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-10-31 23:51:04,920 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-10-31 23:51:05,015 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-10-31 23:51:11,708 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-10-31 23:51:11,727 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-10-31 23:51:11,875 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-10-31 23:51:12,139 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:51:12,141 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:51:12,445 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:51:14,112 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 14 engines, 14 operational
+2025-10-31 23:51:14,114 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-10-31 23:51:14,115 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-10-31 23:51:14,115 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-10-31 23:51:14,116 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-10-31 23:51:14,116 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-10-31 23:51:14,117 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-10-31 23:51:14,118 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-10-31 23:51:14,118 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 14
+2025-10-31 23:51:14,426 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-10-31 23:52:11,467 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:52:12,455 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:52:12,464 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:52:12,477 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:53:11,465 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:53:11,469 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-10-31 23:53:12,460 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:53:12,463 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-10-31 23:53:12,466 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:35:42,290 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-11-01 01:35:58,747 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-11-01 01:35:58,833 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-11-01 01:35:58,838 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-11-01 01:35:58,843 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-11-01 01:36:30,577 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-11-01 01:36:30,656 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-11-01 01:36:32,919 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-11-01 01:36:33,566 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-11-01 01:36:33,571 | 🚀 config | INFO | Configuration health check completed
+2025-11-01 01:36:33,572 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-11-01 01:36:35,508 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-11-01 01:36:35,519 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-11-01 01:36:36,874 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-11-01 01:36:47,199 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-11-01 01:36:58,937 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-11-01 01:36:58,987 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-11-01 01:37:35,176 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-11-01 01:37:35,178 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-11-01 01:37:35,232 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-11-01 01:37:38,401 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 01:37:40,348 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DatabaseEngine with global fixes: IO Error: Cannot open file "c:\users\steph\ai-model-sentinel\analytics_data.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\python3.13.exe (PID 5976)
+2025-11-01 01:37:40,392 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:37:40,393 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:37:40,450 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-11-01 01:37:40,502 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-11-01 01:37:40,540 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:37:40,556 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:37:49,315 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-11-01 01:37:49,346 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-11-01 01:37:49,374 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-11-01 01:37:53,000 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 14 engines, 14 operational
+2025-11-01 01:37:53,002 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-11-01 01:37:53,003 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-11-01 01:37:53,004 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-11-01 01:37:53,005 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-11-01 01:37:53,006 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-11-01 01:37:53,007 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-11-01 01:37:53,008 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-11-01 01:37:53,010 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 14
+2025-11-01 01:37:53,359 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-11-01 01:40:06,909 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-11-01 01:40:11,654 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-11-01 01:40:11,801 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-11-01 01:40:11,805 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-11-01 01:40:11,810 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-11-01 01:40:36,523 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-11-01 01:40:36,600 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-11-01 01:40:38,264 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-11-01 01:40:38,706 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-11-01 01:40:38,709 | 🚀 config | INFO | Configuration health check completed
+2025-11-01 01:40:38,711 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-11-01 01:40:39,953 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-11-01 01:40:39,965 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-11-01 01:40:40,900 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-11-01 01:40:44,282 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-11-01 01:40:45,312 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-11-01 01:40:45,335 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-11-01 01:40:52,636 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-11-01 01:40:52,636 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-11-01 01:40:52,650 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-11-01 01:40:53,145 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 01:40:53,369 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DatabaseEngine with global fixes: IO Error: Cannot open file "c:\users\steph\ai-model-sentinel\analytics_data.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\python3.13.exe (PID 5976)
+2025-11-01 01:40:53,378 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:40:53,379 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:40:53,393 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-11-01 01:40:53,432 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-11-01 01:40:53,447 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:40:53,452 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:40:54,884 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-11-01 01:40:54,885 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-11-01 01:40:54,889 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-11-01 01:40:59,196 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 14 engines, 14 operational
+2025-11-01 01:40:59,197 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-11-01 01:40:59,198 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-11-01 01:40:59,199 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-11-01 01:40:59,200 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-11-01 01:40:59,202 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-11-01 01:40:59,204 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-11-01 01:40:59,207 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-11-01 01:40:59,210 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 14
+2025-11-01 01:40:59,347 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-11-01 01:45:27,157 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-11-01 01:45:29,492 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-11-01 01:45:29,510 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-11-01 01:45:29,513 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-11-01 01:45:29,518 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-11-01 01:45:31,959 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-11-01 01:45:31,973 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-11-01 01:45:32,120 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-11-01 01:45:32,175 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-11-01 01:45:32,176 | 🚀 config | INFO | Configuration health check completed
+2025-11-01 01:45:32,177 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-11-01 01:45:32,293 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-11-01 01:45:32,297 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-11-01 01:45:32,358 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-11-01 01:45:33,240 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-11-01 01:45:33,972 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-11-01 01:45:33,985 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-11-01 01:45:38,577 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-11-01 01:45:38,578 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-11-01 01:45:38,586 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-11-01 01:45:38,824 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 01:45:38,951 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DatabaseEngine with global fixes: IO Error: Cannot open file "c:\users\steph\ai-model-sentinel\analytics_data.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\python3.13.exe (PID 5976)
+2025-11-01 01:45:38,958 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:45:38,959 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:45:38,967 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-11-01 01:45:38,988 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-11-01 01:45:38,999 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:45:39,003 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:45:39,987 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-11-01 01:45:39,988 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-11-01 01:45:39,991 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-11-01 01:45:42,706 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 14 engines, 14 operational
+2025-11-01 01:45:42,708 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-11-01 01:45:42,710 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-11-01 01:45:42,711 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-11-01 01:45:42,712 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-11-01 01:45:42,714 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-11-01 01:45:42,715 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-11-01 01:45:42,716 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-11-01 01:45:42,717 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 14
+2025-11-01 01:45:42,869 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-11-01 01:48:35,175 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-11-01 01:48:37,981 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-11-01 01:48:38,004 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-11-01 01:48:38,007 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-11-01 01:48:38,011 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-11-01 01:48:39,753 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-11-01 01:48:39,770 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-11-01 01:48:39,905 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-11-01 01:48:39,961 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-11-01 01:48:39,979 | 🚀 config | INFO | Configuration health check completed
+2025-11-01 01:48:40,042 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-11-01 01:48:40,242 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-11-01 01:48:40,248 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-11-01 01:48:40,357 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-11-01 01:48:41,467 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-11-01 01:48:42,141 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-11-01 01:48:42,154 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-11-01 01:48:45,461 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-11-01 01:48:45,462 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-11-01 01:48:45,476 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-11-01 01:48:45,728 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 01:48:46,561 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DatabaseEngine with global fixes: IO Error: Cannot open file "c:\users\steph\ai-model-sentinel\analytics_data.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\python3.13.exe (PID 5976)
+2025-11-01 01:48:46,567 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:48:46,568 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:48:46,574 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-11-01 01:48:46,593 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-11-01 01:48:46,605 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:48:46,611 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:48:47,337 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-11-01 01:48:47,338 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-11-01 01:48:47,339 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-11-01 01:48:50,638 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 14 engines, 14 operational
+2025-11-01 01:48:50,640 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-11-01 01:48:50,641 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-11-01 01:48:50,642 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-11-01 01:48:50,644 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-11-01 01:48:50,646 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-11-01 01:48:50,651 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-11-01 01:48:50,652 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-11-01 01:48:50,654 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 14
+2025-11-01 01:48:50,776 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-11-01 01:50:15,045 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-11-01 01:50:18,140 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-11-01 01:50:18,169 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-11-01 01:50:18,173 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-11-01 01:50:18,176 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-11-01 01:50:21,011 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-11-01 01:50:21,057 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-11-01 01:50:21,335 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-11-01 01:50:21,411 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-11-01 01:50:21,413 | 🚀 config | INFO | Configuration health check completed
+2025-11-01 01:50:21,414 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-11-01 01:50:21,591 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-11-01 01:50:21,598 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-11-01 01:50:21,692 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-11-01 01:50:23,057 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-11-01 01:50:24,171 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-11-01 01:50:24,197 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-11-01 01:50:40,186 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:40,199 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:50:40,445 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:50:40,496 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:50:40,500 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:50:40,924 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:50:41,214 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:41,246 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:41,247 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:42,619 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:44,635 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:45,636 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:48,635 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:49,618 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:49,619 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:50,714 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:50:50,716 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:50:50,722 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:50:50,750 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:50:51,714 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:51,715 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:51,717 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:53,948 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-11-01 01:50:53,950 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-11-01 01:50:53,996 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-11-01 01:50:54,414 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:56,479 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:50:57,117 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 01:50:57,415 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:00,262 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DatabaseEngine with global fixes: IO Error: Cannot open file "c:\users\steph\ai-model-sentinel\analytics_data.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\python3.13.exe (PID 5976)
+2025-11-01 01:51:00,303 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:51:00,308 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:51:00,373 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-11-01 01:51:00,509 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-11-01 01:51:00,561 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:51:00,611 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:51:00,715 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:01,428 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:01,748 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:03,443 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:06,413 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:06,428 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:09,969 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-11-01 01:51:10,003 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-11-01 01:51:10,020 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-11-01 01:51:10,439 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:12,119 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:12,121 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:13,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:13,747 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 14 engines, 14 operational
+2025-11-01 01:51:13,748 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-11-01 01:51:13,749 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-11-01 01:51:13,750 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-11-01 01:51:13,752 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-11-01 01:51:13,753 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-11-01 01:51:13,754 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-11-01 01:51:13,756 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-11-01 01:51:13,757 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 14
+2025-11-01 01:51:14,166 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-11-01 01:51:16,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:17,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:19,157 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:21,437 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:51:22,120 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:22,437 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:22,440 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:25,115 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:27,115 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:28,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:31,428 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:32,131 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:32,446 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:34,114 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:37,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:37,128 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:40,433 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:42,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:42,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:43,141 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:46,127 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:47,123 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:49,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:51,437 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:51:51,439 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:51:52,121 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:52,148 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:52,152 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:55,120 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:57,122 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:51:58,115 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:52:01,422 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:52:02,120 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:52:02,499 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:52:04,113 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:52:12,450 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:52:12,452 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:52:12,454 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:52:46,315 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-11-01 01:52:50,321 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-11-01 01:52:50,349 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-11-01 01:52:50,354 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-11-01 01:52:50,360 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-11-01 01:52:53,156 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-11-01 01:52:53,182 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-11-01 01:52:53,410 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-11-01 01:52:53,488 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-11-01 01:52:53,490 | 🚀 config | INFO | Configuration health check completed
+2025-11-01 01:52:53,492 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-11-01 01:52:53,666 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-11-01 01:52:53,672 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-11-01 01:52:53,773 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-11-01 01:52:55,085 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-11-01 01:52:56,537 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-11-01 01:52:56,567 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-11-01 01:53:02,520 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-11-01 01:53:02,520 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-11-01 01:53:02,531 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-11-01 01:53:02,802 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 01:53:02,949 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DatabaseEngine with global fixes: IO Error: Cannot open file "c:\users\steph\ai-model-sentinel\analytics_data.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\python3.13.exe (PID 5976)
+2025-11-01 01:53:02,958 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:53:02,961 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:53:02,968 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-11-01 01:53:02,988 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-11-01 01:53:03,000 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:53:03,004 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:53:03,859 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-11-01 01:53:03,860 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-11-01 01:53:03,862 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-11-01 01:53:06,051 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 14 engines, 14 operational
+2025-11-01 01:53:06,052 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-11-01 01:53:06,053 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-11-01 01:53:06,054 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-11-01 01:53:06,055 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-11-01 01:53:06,056 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-11-01 01:53:06,058 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-11-01 01:53:06,059 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-11-01 01:53:06,060 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 14
+2025-11-01 01:53:06,180 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-11-01 01:53:11,739 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:53:12,736 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:12,739 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:12,741 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:32,476 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:53:33,446 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:33,475 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:33,477 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:34,333 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:53:34,335 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:53:34,346 | 🚀 waitress.queue | WARNING | Task queue depth is 3
+2025-11-01 01:53:34,461 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:34,482 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:53:34,556 | 🚀 waitress.queue | WARNING | Task queue depth is 3
+2025-11-01 01:53:35,044 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:35,046 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:35,054 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:37,999 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:39,995 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:41,377 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:44,134 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:45,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:46,104 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:47,349 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:50,116 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:50,121 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:53,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:55,132 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:55,471 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:56,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:53:59,136 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:00,117 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:02,122 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:04,451 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:54:05,451 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:05,456 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:05,460 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:08,160 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:10,132 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:11,129 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:14,445 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:15,121 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:15,444 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:17,128 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:20,130 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:20,137 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:23,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:25,123 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:25,437 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:26,400 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:29,116 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:30,135 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:32,120 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:34,446 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:54:34,450 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:54:35,441 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:35,444 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:35,451 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:38,124 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:40,119 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:54:41,118 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:55:12,171 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:55:12,172 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:55:12,173 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:56:11,397 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-11-01 01:56:11,440 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:56:17,126 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-11-01 01:56:17,198 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-11-01 01:56:17,201 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-11-01 01:56:17,203 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-11-01 01:56:20,773 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:56:20,773 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:56:20,775 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:56:38,404 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-11-01 01:56:38,470 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-11-01 01:56:40,729 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-11-01 01:56:41,390 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-11-01 01:56:41,393 | 🚀 config | INFO | Configuration health check completed
+2025-11-01 01:56:41,396 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-11-01 01:56:43,099 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-11-01 01:56:43,110 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-11-01 01:56:44,047 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-11-01 01:56:52,009 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-11-01 01:57:11,450 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:57:11,453 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:57:12,445 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:57:12,456 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:57:12,464 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:57:14,583 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-11-01 01:57:14,659 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-11-01 01:57:34,038 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-11-01 01:57:34,039 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-11-01 01:57:34,076 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-11-01 01:57:36,353 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 01:57:37,718 | 🚀 LocalAnalyticsEngine | INFO | ✅ DuckDB engine connected successfully
+2025-11-01 01:57:38,421 | 🚀 LocalAnalyticsEngine | INFO | ✅ DuckDB schema initialized successfully
+2025-11-01 01:57:57,034 | 🚀 LocalAnalyticsEngine | INFO | ✅ ML libraries imported successfully
+2025-11-01 01:57:57,035 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 01:57:57,059 | 🚀 LocalAnalyticsEngine | INFO | ✅ DuckDB engine connected successfully
+2025-11-01 01:57:57,075 | 🚀 LocalAnalyticsEngine | INFO | ✅ DuckDB schema initialized successfully
+2025-11-01 01:57:57,105 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DatabaseEngine
+2025-11-01 01:57:57,134 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:57:57,136 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 01:57:57,180 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-11-01 01:57:57,250 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-11-01 01:57:57,302 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:57:57,352 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 01:58:10,898 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-11-01 01:58:10,925 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-11-01 01:58:10,954 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
+2025-11-01 01:58:11,595 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:58:12,589 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:58:12,595 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:58:12,603 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:58:16,523 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL DEPLOYMENT: 15 engines, 15 operational
+2025-11-01 01:58:16,524 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise AI Sentinel 2.0.0 - GLOBAL INITIALIZATION COMPLETE
+2025-11-01 01:58:16,526 | 🚀 EnterpriseSentinel2025 | INFO | 👨‍💻 Developer: Saleh Asaad Abughabra
+2025-11-01 01:58:16,527 | 🚀 EnterpriseSentinel2025 | INFO | 🏢 Company: Global Enterprise Solutions
+2025-11-01 01:58:16,528 | 🚀 EnterpriseSentinel2025 | INFO | 📅 Release: 2025
+2025-11-01 01:58:16,529 | 🚀 EnterpriseSentinel2025 | INFO | 🔐 Security Level: CLASSIFIED - TIER 1
+2025-11-01 01:58:16,530 | 🚀 EnterpriseSentinel2025 | INFO | 💾 Database: enterprise_sentinel_2025.db
+2025-11-01 01:58:16,532 | 🚀 EnterpriseSentinel2025 | INFO | ☁️  Cloud Backup: DISABLED
+2025-11-01 01:58:16,533 | 🚀 EnterpriseSentinel2025 | INFO | 🔧 Global Engines Discovered: 15
+2025-11-01 01:58:17,069 | 🚀 waitress | INFO | Serving on http://0.0.0.0:8000
+2025-11-01 01:59:11,580 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 01:59:11,582 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 01:59:12,578 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:59:12,580 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:59:12,582 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 01:59:29,391 | 🚀 EnterpriseSentinel2025 | INFO | 🚀 Enterprise Database initialized: enterprise_sentinel_2025.db
+2025-11-01 01:59:34,349 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Failed to initialize Backblaze client: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: Malformed Access Key Id
+2025-11-01 01:59:34,449 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: MLEngine
+2025-11-01 01:59:34,463 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: FusionEngine
+2025-11-01 01:59:34,468 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumEngine
+2025-11-01 01:59:57,922 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityEngine
+2025-11-01 01:59:57,998 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ModelMonitoringEngine
+2025-11-01 01:59:59,346 | 🚀 root | INFO | ✅ Settings initialized for development environment
+2025-11-01 01:59:59,781 | 🚀 config | INFO | Feature flags module not available - this is optional
+2025-11-01 01:59:59,789 | 🚀 config | INFO | Configuration health check completed
+2025-11-01 01:59:59,793 | 🚀 config | INFO | Configuration package v2.0.0 initialized
+2025-11-01 02:00:01,004 | 🚀 DatabasePackage | INFO | 🎯 Database Module Package v2.0.0 loaded successfully
+2025-11-01 02:00:01,022 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DynamicRuleEngine with global fixes: type object 'UserRole' has no attribute 'VIEWER'
+2025-11-01 02:00:01,816 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: DataQualityEngine
+2025-11-01 02:00:08,473 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ExplainabilityEngine
+2025-11-01 02:00:11,451 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 02:00:11,456 | 🚀 waitress.queue | WARNING | Task queue depth is 2
+2025-11-01 02:00:11,490 | 🚀 waitress.queue | WARNING | Task queue depth is 1
+2025-11-01 02:00:12,451 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 02:00:12,454 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 02:00:12,458 | 🚀 EnterpriseSentinel2025 | ERROR | 💥 Enterprise metrics collection failed: PdhAddEnglishCounterW failed. Performance counters may be disabled.
+2025-11-01 02:00:20,254 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumCryptographicEngine
+2025-11-01 02:00:20,311 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumInformationEngine
+2025-11-01 02:00:40,812 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | ⚠️ QuantumMathematicalEngine v2.0.0 - GLOBAL DOMINANCE MODE ACTIVATED
+2025-11-01 02:00:40,814 | 🚀 quantum_enhanced.quantum_math.quantum_calculator | INFO | 🌌 Analysis Level: COSMIC
+2025-11-01 02:00:40,831 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: QuantumMathematicalEngine
+2025-11-01 02:00:43,711 | 🚀 LocalAnalyticsEngine | WARNING | ⚠️ PostgreSQL connection failed: 'DatabaseConfig' object has no attribute 'url'
+2025-11-01 02:00:44,446 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine DatabaseEngine with global fixes: IO Error: Cannot open file "c:\users\steph\ai-model-sentinel\analytics_data.duckdb": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\python3.13.exe (PID 10624)
+2025-11-01 02:00:44,503 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 02:00:44,505 | 🚀 DataPipeline | ERROR | ❌ Local analytical engine initialization failed: 'MultiDBConnector' object has no attribute 'is_connected'
+2025-11-01 02:00:44,536 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: LocalAnalyticalEngine
+2025-11-01 02:00:44,587 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SnowflakeAnalyticsEngine
+2025-11-01 02:00:44,616 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 02:00:44,643 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine QuantumNeuralFingerprintEngine with global fixes: cannot import name 'PBKDF2' from 'cryptography.hazmat.primitives.kdf.pbkdf2' (C:\Users\steph\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cryptography\hazmat\primitives\kdf\pbkdf2.py)
+2025-11-01 02:00:55,180 | 🚀 EnterpriseSentinel2025 | ERROR | ❌ Failed to load engine ProductionQuantumSecurityEngine with global fixes: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+2025-11-01 02:00:55,193 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: SecurityAnalyticsEngine
+2025-11-01 02:00:55,222 | 🚀 EnterpriseSentinel2025 | INFO | 🌍 GLOBAL ENGINE LOADED: ThreatAnalyticsEngine
