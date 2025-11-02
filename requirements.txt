@@ -1,6 +1,6 @@
 flask==2.3.3 
 waitress==3.0.1 
-cryptography==43.0.1 
+cryptography==44.0.1 
 numpy==1.24.3 
 torch==2.0.1 
 duckdb==0.8.1 
